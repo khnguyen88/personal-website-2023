@@ -23,4 +23,13 @@ export class NavbarComponent {
 
   }
 
+  clickMe(){
+    if (window.innerWidth < 500){
+      alert("Less than 500");
+    }
+    else{
+      alert("Greater than 500");
+    }
+  }
+
 }

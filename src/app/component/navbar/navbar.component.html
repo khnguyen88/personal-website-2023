@@ -6,7 +6,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.route" [routerLinkActive]="['active']" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">{{item.label}}</a>
+                <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.route" [routerLinkActive]="['active']" (click)="clickMe()">{{item.label}}</a>
             </div>
         </div>
       </div>
