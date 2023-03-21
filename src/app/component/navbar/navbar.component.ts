@@ -23,4 +23,23 @@ export class NavbarComponent {
 
   }
 
+
+  clickMe(){
+    // TODO: Write a function that will collapse navigation menu upon link click in mobile mode. Currently default boostrap does not support
+    // this behavior
+
+    // https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-collapse.php
+    // https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works
+    // https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5
+
+    if (window.innerWidth < 500){
+      alert("Less than 500");
+
+    }
+    else{
+      alert("Greater than 500");
+    }
+
+  }
+
 }
