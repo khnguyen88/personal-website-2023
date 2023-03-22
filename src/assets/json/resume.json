@@ -1,0 +1,164 @@
+{
+    "basics": {
+        "name": "Khiem Nguyen",
+        "label": "Software Engineer, P.E.",
+        "image": "",
+        "email": "khnguyen88@gmail.com",
+        "phone": "(410) 900-3533",
+        "url": "",
+        "location": {
+            "city": "Grand Rapids",
+            "countryCode": "US",
+            "region": "MI"
+        },
+        "profiles": [{
+            "network": "Github",
+            "username": "khnguyen88",
+            "url": "https://github.com/khnguyen88/"
+        }]
+    },
+    "education": [{
+        "degree": "Master of Science",
+        "field": "Applied Computer Science",
+        "concentration": "Software Development",
+        "date": "Dec 2024 (Anticipated)",
+        "gpa": "4.0",
+        "university": "Grand Valley State University",
+        "location": "Grand Rapids, MI"
+        },
+        {
+        "degree": "Bachelor of Science",
+        "field": "Civil & Environmental Engineering",
+        "concentration": "Environment & Water Resources",
+        "date": "Dec. 2010",
+        "gpa": "3.6",
+        "university": "University of Maryland",
+        "location": "College Park, MD"
+    }],
+    "licenses": [{
+      "name": "Professional Engineer, MD",
+      "number":"#40397",
+      "date": "2016"
+    }],
+    "skills": {
+        "languages": ["Python", "JavaScript (JS)", "HTML & CSS", "TypeScript", "C#", "SQL", "PHP", "Rails"],
+        "framework": [".NET", "Angular", "React Native", "Ruby On Rails", "React", "Flask", "Bootstrap"],
+        "software": ["Visual Studio Code", "Visual Studio", "PyCharm", "Microsoft SQL Server Management", "Google Cloud", "Google Firebase",
+                        "Arduino IDE", "ArcGIS 10.3", "MicroStation V8i", "AutoCAD Civil 3D", "HEC-GeoRas", "TR-20 & TR-55", "HEC-RAS", 
+                        "Adobe Suite"]
+    },
+    "workExperience": [
+        {
+            "jobTitle": "Software Engineer",
+            "company": "JvR Enterprises LLC, Consumers Energy Contract",
+            "location": "Grand Rapids, MI",
+            "startDate": "Febuary 2023",
+            "endDate": "Present",
+            "responsibilities": [
+                "Updated the ISchedule Web Application by developing an administrative section and designed the associated webpages in Angular",
+                "Designed and implemented a sub-navigation menu, utilizing Primeng Components to create dynamic tables with editable content",
+                "Created an admin service to connect to the backend endpoints, retrieving data needed to populate tables and webpages",
+                "Modified the .NET Rest API service by creating new endpoints, DTOs, entities, controller methods, service and repository classes for the admin section to communicate with the front-end admin service in Angular",
+                "Performed assurance tests for the front-end and back-end services and applications"
+            ]
+        },
+        {
+            "jobTitle": "Software Engineer",
+            "company": "JvR Enterprises LLC, Sprinkes Donut Shop Contract",
+            "location": "Grand Rapids, MI",
+            "startDate": "October 2022",
+            "endDate": "Febuary 2023",
+            "responsibilities": [
+                "Developed a data transfer Windows desktop Application in .NET for Sprinkles Donuts, which designed the backend to retrieve, sanitize, and map data from the Homebase API to an Azure SQL Database",
+                "Created Models, Entities, and DTOs needed to map the data from Homebase to Azure, displaying it on the Application",
+                "Utilized Entity Framework and Automapper to map the different different data sources, track the CRUD changes made to the database, and talk to the remote repository",
+                "Created methods in the services to retrieve and transfer the data between the different sources and displayed it on the UI",
+                "Developed and modified unit tests and performed acceptance tests to catch and fix bugs, minimizing any chances of error during deployement of the production application"
+            ]
+        },
+        {
+            "jobTitle": "Project Engineer",
+            "company": "Stantec Consulting Ltd.",
+            "location": "Laurel, MD (Remote)",
+            "startDate": "November 2012",
+            "endDate": "October 2022",
+            "responsibilities": [
+                "Supervise and review work of entry-level engineers as drainage sub-team manager",
+                "Lead the design and analysis of drainage systems, stormwater ponds, and environmental site design facilities",
+                "Build engineering design plans and prepare reports for a variety of linear, site development, and coastal projects",
+                "Prepare project maps, perform site analyses, and manage databases using ArcGIS software",
+                "Develop the hydrological and hydraulic modeling for FEMA’s and state agencies’ approximate flood studies",
+                "Perform quality assurance and compliance assessments on engineered design plans, reports, and computations"
+            ]
+        },
+        {
+            "Job Title": "Project Engineer & CAD Designer",
+            "Company": "Endesco Inc.",
+            "Location": "Gaithersburg, MD",
+            "StartDate": "April 2011",
+            "EndDate": "November 2012",
+            "Responsibilities": [
+                "Designed and analyzed storm drain systems, sediment control measures, stormwater management, and ESD/BMP facilities",
+                "Assisted in the development of drainage plans and cost estimations for roadway and highway projects"
+            ]
+        },
+        {
+            "Job Title": "Intern",
+            "Company": "Maryland Sea Grant REU Program",
+            "Location": "Horn Point Laboratory, Cambridge, MD",
+            "StartDate": "June 2010",
+            "EndDate": "Aug. 2010",
+            "Responsibilities": [
+                "Designed, constructed, and tested the ACECam - a remote-controlled submersible water quality measuring device",
+                "Deployed the ACECam and other tools to collect images and samples of water and sediment from the Chesapeake Bay"
+            ]
+        }
+    ],    
+    "projects": [
+        {
+            "name": "Personal Website",
+            "description": "Designed and developed a responsive personal website. The website showcases a collection of projects and creative works and serves to enhance public outreach.",
+            "technologies": ["Angular", "TypeScript", "HTML", "SCSS", "Bootstrap"]
+        },
+        {
+            "name": "Mock Pizza Restaurant Website",
+            "description": "Created a responsive website for a mock pizza restaurant.The website features a modern design and incorporates custom animations and interactions to engage users and enhance their experience.",
+            "technologies": ["Angular", "TypeScript", "HTML", "SCSS", "Bootstrap"]
+        },
+        {
+            "name": "Mock Blog Site",
+            "description": "Developed a minimialistic blog site with basic authentication and authorization features. The site allows authorized users to create, edit, and delete blogs and comments, which are stored in a SQLite database.",
+            "technologies": ["Ruby-on-Rails", "Rails", "Ruby", "HTML", "CSS", "JavaScript", "SQL"]
+        },
+        {
+            "name": "Weather Mobile App",
+            "description": "Built a multi-screen weather app using React Native and a weather API that provides local weather data based on location coordinates. User input data is stored and retrieved via Google Firebase, enabling users to access weather information from anywhere and at any time.",
+            "technologies": ["React Native", "Google Firebase"]
+        },
+        {
+            "name": "NannyHelper App",
+            "description": "Created a mobile app tailored to parents and babysitters that enables them to schedule and manage personal information through a user profile. The app includes features such as photo sharing and a search function for childcare YouTube videos.",
+            "technologies": ["React Native"]
+        },
+        {
+            "name": "Snake Game JS",
+            "description": "Designed and developed a responsive webpage that features a variant of the classic game Snake. The game includes many features such as multiple types of food and in-game color change, and it scales dynamically to the size of the screen to provide an 80's retro aesthetic.",
+            "technologies": ["HTML", "CSS", "JavaScript"]
+        },
+        {
+            "name": "Pong Game JS",
+            "description": "Developed a single-player Pong game against a PC-controlled paddle that scales dynamically to the size of the screen. The game includes a series of unit tests written using JEST, which helps to ensure its reliability and performance.",
+            "technologies": ["HTML", "CSS", "JavaScript", "JEST"]
+        },
+        {
+            "name": "Game of Life Simulation",
+            "description": "Programmed a terminal text-based cell simulation using Python that allows users to define the iteration rules for neighboring cells. The simulation provides a unique and interactive way to explore cellular automata and patterns.",
+            "technologies": ["Python"]
+        },
+        {
+            "name": "Climate Control Regulator",
+            "description": "Built a climate regulator using Arduino IDE that features a sensor for measuring and displaying humidity and temperature on an LCD monitor. The regulator triggers a 5V fog maker if the sensor values reach a specific threshold, enabling users to control the climate in a closed environment.",
+            "technologies": ["Arduino IDE"]
+        }
+    ]
+}
