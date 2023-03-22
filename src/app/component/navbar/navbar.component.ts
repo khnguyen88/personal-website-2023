@@ -11,15 +11,15 @@ export class NavbarComponent {
 
   ngOnInit(){
     this.menuItems = [
-      {label: 'Home', route: 'home'},
-      {label: 'Resume', route: 'resume'},
-      {label: 'Interests', route: 'interests'},
-      {label: 'Projects', route: 'projects'},
-      {label: 'Gallery', route: 'gallery'},
-      {label: 'Contact', route: 'contact'},
+      {label: 'Home', route: '/home'},
+      {label: 'Resume', route: '/resume'},
+      {label: 'Interests', route: '/interests'},
+      {label: 'Projects', route: '/projects'},
+      {label: 'Gallery', route: '/gallery'},
+      {label: 'Contact', route: '/contact'},
     ];
 
-    this.menuItemHome = {label: 'Home', route: 'home'};
+    this.menuItemHome = {label: 'Home', route: '/home'};
 
   }
 
