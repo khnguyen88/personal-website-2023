@@ -49,7 +49,7 @@
     "workExperience": [
         {
             "jobTitle": "Software Engineer",
-            "company": "JvR Enterprises LLC, Consumers Energy Contract",
+            "company": "JvR Enterprises LLC - Consumers Energy Contract",
             "location": "Grand Rapids, MI",
             "startDate": "Febuary 2023",
             "endDate": "Present",
@@ -63,7 +63,7 @@
         },
         {
             "jobTitle": "Software Engineer",
-            "company": "JvR Enterprises LLC, Sprinkes Donut Shop Contract",
+            "company": "JvR Enterprises LLC - Sprinkes Donut Shop Contract",
             "location": "Grand Rapids, MI",
             "startDate": "October 2022",
             "endDate": "Febuary 2023",
@@ -91,23 +91,23 @@
             ]
         },
         {
-            "Job Title": "Project Engineer & CAD Designer",
-            "Company": "Endesco Inc.",
-            "Location": "Gaithersburg, MD",
-            "StartDate": "April 2011",
-            "EndDate": "November 2012",
-            "Responsibilities": [
+            "jobTitle": "Project Engineer & CAD Designer",
+            "company": "Endesco Inc.",
+            "location": "Gaithersburg, MD",
+            "startDate": "April 2011",
+            "endDate": "November 2012",
+            "responsibilities": [
                 "Designed and analyzed storm drain systems, sediment control measures, stormwater management, and ESD/BMP facilities",
                 "Assisted in the development of drainage plans and cost estimations for roadway and highway projects"
             ]
         },
         {
-            "Job Title": "Intern",
-            "Company": "Maryland Sea Grant REU Program",
-            "Location": "Horn Point Laboratory, Cambridge, MD",
-            "StartDate": "June 2010",
-            "EndDate": "Aug. 2010",
-            "Responsibilities": [
+            "jobTitle": "Intern",
+            "company": "Maryland Sea Grant REU Program",
+            "location": "Horn Point Laboratory, Cambridge, MD",
+            "startDate": "June 2010",
+            "endDate": "Aug. 2010",
+            "responsibilities": [
                 "Designed, constructed, and tested the ACECam - a remote-controlled submersible water quality measuring device",
                 "Deployed the ACECam and other tools to collect images and samples of water and sediment from the Chesapeake Bay"
             ]
@@ -121,7 +121,7 @@
         },
         {
             "name": "Mock Pizza Restaurant Website",
-            "description": "Created a responsive website for a mock pizza restaurant.The website features a modern design and incorporates custom animations and interactions to engage users and enhance their experience.",
+            "description": "Created a responsive website for a mock pizza restaurant.The website features a sleak and modern design.",
             "technologies": ["Angular", "TypeScript", "HTML", "SCSS", "Bootstrap"]
         },
         {
