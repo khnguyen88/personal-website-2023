@@ -1,6 +1,128 @@
+<!-- Page Header -->
 <h1>Resume</h1>
-<p>{{resume.personal.name}}</p>
-<p>{{resume.personal}}</p>
-<code>
+<br>
+
+<!-- Resume - Personal Information -->
+<h2>Personal Information</h2>
+<div class="bg-primary-subtle">
+    <p>{{resume.personal.name}}</p>
+    <p>{{resume.personal.label}}</p>
+    <p>{{resume.personal.email}}</p>
+    <p>{{resume.personal.phone}}</p>
+    <p>
+        <span>{{resume.personal.location.city}}, </span>
+        <span>{{resume.personal.location.region}}, </span>
+        <span>{{resume.personal.location.countryCode}}</span>
+    </p>
+
+    <h3>Profile</h3>
+    <div *ngFor="let profileItem of resume.personal.profiles">
+        <p>{{profileItem.network}}</p>
+        <p>{{profileItem.url}}</p>
+    </div>
+</div>
+<br>
+<hr>
+
+<!-- Resume - Education -->
+<h2>Education</h2>
+<div *ngFor="let educationItem of resume.education">
+    <div class="bg-primary-subtle">
+        <p>{{educationItem.degree}}</p>
+        <p>{{educationItem.field}}</p>
+        <p>{{educationItem.concentration}}</p>
+        <p>{{educationItem.date}}</p>
+        <p>{{educationItem.gpa}}</p>
+        <p>{{educationItem.university}}</p>
+        <p>{{educationItem.location}}</p>
+    </div>
+</div>
+<br>
+<hr>
+
+<!-- Resume - Licenses -->
+<h2>Licenses</h2>
+<div *ngFor="let licenseItem of resume.licenses">
+    <div class="bg-primary-subtle">
+        <p>{{licenseItem.name}}</p>
+        <p>{{licenseItem.number}}</p>
+        <p>{{licenseItem.date}}</p>
+    </div>
+</div>
+<br>
+<hr>
+
+<!-- Resume - Skills -->
+<h2>Skills</h2>
+<div class="bg-primary-subtle">
+    <h3>Language</h3>
+    <ul>
+        <li *ngFor="let languageItem of resume.skills.languages">
+            {{languageItem}}
+        </li>
+    </ul>    
+</div>
+
+<div class="bg-primary-subtle">
+    <h3>Framework</h3>
+    <ul>
+        <li *ngFor="let frameworkItem of resume.skills.framework">
+            {{frameworkItem}}
+        </li>
+    </ul>    
+</div>
+
+<div class="bg-primary-subtle">
+    <h3>Software</h3>
+    <ul>
+        <li *ngFor="let softwareItem of resume.skills.software">
+            {{softwareItem}}
+        </li>
+    </ul>    
+</div>
+<br>
+<hr>
+
+<!-- Resume - Work Experience -->
+<h2>Work Experience</h2>
+<div *ngFor="let workItem of resume.workExperience">
+    <div class="bg-primary-subtle">
+        <p>{{workItem.jobTitle}}</p>
+        <p>{{workItem.company}}</p>
+        <p>{{workItem.location}}</p>
+        <p>{{workItem.startDate}} - {{workItem.endDate}}</p>
+        <div>
+            <ul>
+                <li *ngFor="let responsibilityItem of workItem.responsibilities">
+                    {{responsibilityItem}}
+                </li>
+            </ul>   
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+
+
+<!-- Resume - PersonalProjects -->
+<h2>Personal Projects</h2>
+<div *ngFor="let projectItem of resume.projects">
+    <div class="bg-primary-subtle">
+        <p>{{projectItem.name}}</p>
+        <p>{{projectItem.description}}</p>
+        <p>{{projectItem.location}}</p>
+        <p>Technologies: 
+            <span *ngFor="let technologyItem of projectItem.technologies">
+                {{technologyItem}}, 
+            </span>
+        </p>
+    </div>
+</div>
+<br>
+<hr>
+
+<!-- RAW JSON -->
+<!-- <code>
     <pre>{{resume | json}}</pre>
-</code>
+</code> -->
+
