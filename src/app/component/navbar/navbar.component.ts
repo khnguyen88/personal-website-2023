@@ -9,6 +9,8 @@ export class NavbarComponent {
   menuItems: any[];
   menuItemHome: any;
 
+  isMenuCollapsed: boolean = true;
+
   ngOnInit(){
     this.menuItems = [
       {label: 'Home', route: '/home'},
