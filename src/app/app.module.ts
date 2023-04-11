@@ -13,6 +13,8 @@ import { GalleryComponent } from './component/gallery/gallery.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { HomeComponent } from './component/home/home.component';
 
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { HomeComponent } from './component/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
