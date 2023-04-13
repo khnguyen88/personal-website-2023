@@ -16,8 +16,12 @@ import { takeUntil } from 'rxjs';
 export class GalleryComponent extends BaseComponent implements OnInit{
 
   // The imageGallery property holds the JSON data retrieve as an array of objects
-  // To be used to populate data in the Gallery Template and we bpage
+  // To be used to populate data in the Gallery Template and image elements attributes
   imageGallery: any;
+
+  // Stores the base directory of asset images folder
+  // To be used to populate data in the Gallery Template and image elements attributes
+  baseImageAssetDirectory: string = "../../../assets/images/";
 
   // Imported and injected the Gallery Service through the class constructor's parameter
   constructor(private galleryService: GalleryService) {
