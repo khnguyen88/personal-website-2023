@@ -13,9 +13,17 @@
         <div *ngFor="let galleryItem of imageGallery">
             <div>
                 <div>{{galleryItem.folder}}</div>
+
                 <div *ngFor="let image of galleryItem.images">
                     <div>
                         {{image.filename}}
+                    </div>
+
+                    <div class="card-body">
+                        <img class="card-img-top" 
+                            [src]="baseImageAssetDirectory + galleryItem.folder + '/' + image.filename"
+                            [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
