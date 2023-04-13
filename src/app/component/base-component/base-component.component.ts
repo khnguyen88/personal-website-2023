@@ -1,6 +1,7 @@
 // Parent base component used as needed for subscription handling
 // Ensures that subscription to observable is completed once component is destroyed
 // Source: Learned from work, but similar pattern here - https://stackoverflow.com/questions/38008334/angular-rxjs-when-should-i-unsubscribe-from-subscription
+// Other source: https://www.digitalocean.com/community/tutorials/angular-takeuntil-rxjs-unsubscribe
 
 import { Component, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
