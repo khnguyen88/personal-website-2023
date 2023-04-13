@@ -1,0 +1,52 @@
+[  
+    { 
+        "folder": "arts_crafts",  
+        "images": [
+            {
+                "filename": "arts_crafts-1.jpg",
+                "description": "glass laser engraving",
+                "tag": "art"
+            },
+            {
+                "filename": "arts_crafts-2.jpg",
+                "description": "glass collection engraved",
+                "tag": "art"
+            },
+            {
+                "filename": "arts_crafts-3.jpg",
+                "description": "water coloring group",
+                "tag": "art"
+            },
+            {
+                "filename": "arts_crafts-4.jpg",
+                "description": "watercolor art piece",
+                "tag": "art"
+            }
+        ]
+    },
+    { 
+    "folder": "cooking_and_baking",  
+    "images": [
+        {
+            "filename": "cooking-1.jpg",
+            "description": "borscht",
+            "tag": "food"
+        },
+        {
+            "filename": "cooking-2.jpg",
+            "description": "apple butter",
+            "tag": "food"
+        },
+        {
+            "filename": "cooking-2.jpg",
+            "description": "tomato salad",
+            "tag": "food"
+        },
+        {
+            "filename": "cooking-2.jpg",
+            "description": "homemade pho",
+            "tag": "food"
+        }
+    ]
+}
+  ]  
