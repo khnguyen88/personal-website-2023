@@ -1,5 +1,6 @@
 [  
-    { 
+    {
+        "collectionName": "Arts and Crafts", 
         "folder": "arts_crafts",  
         "images": [
             {
@@ -24,7 +25,8 @@
             }
         ]
     },
-    { 
+    {
+    "collectionName": "Cooking and Baking",  
     "folder": "cooking_and_baking",  
     "images": [
         {
@@ -38,12 +40,12 @@
             "tag": "food"
         },
         {
-            "filename": "cooking-2.jpg",
+            "filename": "cooking-3.jpg",
             "description": "tomato salad",
             "tag": "food"
         },
         {
-            "filename": "cooking-2.jpg",
+            "filename": "cooking-4.jpg",
             "description": "homemade pho",
             "tag": "food"
         }
