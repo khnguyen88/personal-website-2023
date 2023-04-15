@@ -31,48 +31,32 @@
         "images": [
             {
                 "filename": "cooking-1.jpg",
-                "description": "borscht",
-                "tag": "food"
-            },
-            {
-                "filename": "cooking-2.jpg",
-                "description": "apple butter",
-                "tag": "food"
-            },
-            {
-                "filename": "cooking-3.jpg",
-                "description": "tomato salad",
-                "tag": "food"
-            },
-            {
-                "filename": "cooking-4.jpg",
-                "description": "homemade pho",
-                "tag": "food"
-            }
-        ]
-    },
-    {
-        "collectionName": "Electronics",  
-        "folder": "electronics",  
-        "images": [
-            {
-                "filename": "electronics-1.jpg",
                 "description": "Homemade Borscht",
                 "tag": "food"
             },
             {
-                "filename": "electronics-2.jpg",
+                "filename": "cooking-2.jpg",
                 "description": "Canning Apple Butter",
                 "tag": "food"
             },
             {
-                "filename": "electronics-3.jpg",
+                "filename": "cooking-3.jpg",
                 "description": "Tomato Salad",
                 "tag": "food"
             },
             {
-                "filename": "electronics-6.jpg",
+                "filename": "cooking-6.jpg",
                 "description": "Homemade Pho",
+                "tag": "food"
+            },
+            {
+                "filename": "cooking-5.jpg",
+                "description": "Homemade Pho",
+                "tag": "food"
+            },
+                        {
+                "filename": "cooking-10.jpg",
+                "description": "Homemade Sourdough Bread",
                 "tag": "food"
             }
         ]
@@ -145,7 +129,7 @@
             },
             {
                 "filename": "graphic-6.jpg",
-                "description": "Pixel Art",
+                "description": "Benzi Pixel Art",
                 "tag": "graphic"
             },
             {
@@ -235,37 +219,6 @@
                 "filename": "photo_cities-11.jpg",
                 "description": "Chicago Lake View",
                 "tag": "cities"
-            }
-        ]
-    },
-    {
-        "collectionName": "Photography - Landscapes",  
-        "folder": "photography_landscapes",  
-        "images": [
-            {
-                "filename": "photo_landscapes-1.jpg",
-                "description": "Zion National Park - The Narrows",
-                "tag": "landscapes"
-            },
-            {
-                "filename": "photo_landscapes-2.jpg",
-                "description": "Zion National Park - Angel's Landing",
-                "tag": "landscapes"
-            },
-            {
-                "filename": "photo_landscapes-10.jpg",
-                "description": "Maine Coastlines",
-                "tag": "landscapes"
-            },
-            {
-                "filename": "photo_landscapes-14.jpg",
-                "description": "Indian Peaks Wilderness - Lake Isabelle",
-                "tag": "landscapes"
-            },
-            {
-                "filename": "photo_landscapes-19.jpg",
-                "description": "Pictured Rocks National Lakeshore",
-                "tag": "landscapes"
             }
         ]
     },

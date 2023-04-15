@@ -1,0 +1,254 @@
+[  
+    {
+        "collectionName": "Microcontrollers and Electronics",  
+        "folder": "electronics",  
+        "images": [
+            {
+                "filename": "electronics-5.jpg",
+                "description": "Arduino Micro Controller",
+                "tag": "electronics"
+            },
+            {
+                "filename": "electronics-3.jpg",
+                "description": "Breadboard LED Testing",
+                "tag": "electronics"
+            },
+            {
+                "filename": "electronics-1.jpg",
+                "description": "Robotic Competition",
+                "tag": "electronics"
+            }
+        ]
+    },
+    {
+        "collectionName": "Gardening",  
+        "folder": "gardening",  
+        "images": [
+            {
+                "filename": "gardening-1.jpg",
+                "description": "Raised Box Garden",
+                "tag": "gardening"
+            },
+            {
+                "filename": "gardening-3.jpg",
+                "description": "Growing Microgreens",
+                "tag": "gardening"
+            },
+            {
+                "filename": "gardening-12.jpg",
+                "description": "Growing Oyster Mushroom",
+                "tag": "gardening"
+            }
+        ]
+    },
+    {
+        "collectionName": "Cooking and Baking",  
+        "folder": "cooking_and_baking",  
+        "images": [
+            {
+                "filename": "cooking-12.jpg",
+                "description": "Homemade Hot Sauce",
+                "tag": "food"
+            },
+            {
+                "filename": "cooking-10.jpg",
+                "description": "Homemade Bread",
+                "tag": "food"
+            },
+            {
+                "filename": "cooking-5.jpg",
+                "description": "Homemade Pho",
+                "tag": "food"
+            }
+        ]
+    },
+    {
+        "collectionName": "Graphic Design",  
+        "folder": "graphic",  
+        "images": [
+            {
+                "filename": "graphic-1.jpg",
+                "description": "Logo Design",
+                "tag": "graphic"
+            },
+            {
+                "filename": "graphic-9.jpg",
+                "description": "AB Realty",
+                "tag": "graphic"
+            },
+            {
+                "filename": "graphic-6.jpg",
+                "description": "Benzi Pixel Art",
+                "tag": "graphic"
+            }
+        ]
+    },
+    {
+        "collectionName": "Arts and Crafts", 
+        "folder": "arts_crafts",  
+        "images": [
+            {
+                "filename": "arts_crafts-2.jpg",
+                "description": "Glass collection engraved",
+                "tag": "art"
+            },
+            {
+                "filename": "arts_crafts11.jpg",
+                "description": "Embroidery WIP",
+                "tag": "art"
+            },
+            {
+                "filename": "arts_crafts-12.jpg",
+                "description": "Watercolor art piece",
+                "tag": "art"
+            }
+        ]
+    },
+    {
+        "collectionName": "Video Production",  
+        "folder": "video_production",  
+        "images": [
+            {
+                "filename": "video-productions-3.jpg",
+                "description": "Video Production - Camera Setup Front Facing",
+                "tag": "production"
+            },
+            {
+                "filename": "video-productions-4.jpg",
+                "description": "Video Production - Camera Setup on Back",
+                "tag": "production"
+            },
+            {
+                "filename": "video-productions-5.jpg",
+                "description": "Video Editing - Adobe Premiere",
+                "tag": "production"
+            }
+        ]
+    },
+    {
+        "collectionName": "Hiking and Backpacking",  
+        "folder": "hiking_and_backpacking",  
+        "images": [
+            {
+                "filename": "photo_hiking-12.jpg",
+                "description": "Acadia National Park Hike",
+                "tag": "hiking"
+            },
+            {
+                "filename": "photo_hiking-15.jpg",
+                "description": "Mount Goliath Hike",
+                "tag": "hiking"
+            },
+            {
+                "filename": "photo_hiking-2.jpg",
+                "description": "Dolly Sods Hike",
+                "tag": "hiking"
+            }
+        ]
+    },
+    {
+        "collectionName": "Photography - Landscapes",  
+        "folder": "photography_landscapes",  
+        "images": [
+            {
+                "filename": "photo_landscapes-2.jpg",
+                "description": "Zion National Park - Angel's Landing",
+                "tag": "landscapes"
+            },
+            {
+                "filename": "photo_landscapes-4.jpg",
+                "description": "Bryce Canyon National Park - Unknown Trail",
+                "tag": "landscapes"
+            },
+            {
+                "filename": "photo_landscapes-19.jpg",
+                "description": "Pictured Rocks National Lakeshore",
+                "tag": "landscapes"
+            }
+        ]
+    },
+    {
+        "collectionName": "Photography - Astro",  
+        "folder": "photography_astros",  
+        "images": [
+            {
+                "filename": "photo_astros-6.jpg",
+                "description": "Bryce Canyon Stars",
+                "tag": "astro"
+            },
+            {
+                "filename": "photo_astros-12.jpg",
+                "description": "Hart Prairie Preserve Milky Way From Cabin",
+                "tag": "astro"
+            },
+            {
+                "filename": "photo_astros-4.jpg",
+                "description": "Milky Way Behind Rock Face, Unknown Roadside Utah",
+                "tag": "astro"
+            }
+        ]
+    },
+    {
+        "collectionName": "Photography - Cities and Streets",  
+        "folder": "photography_cities",  
+        "images": [
+            {
+                "filename": "photo_cities-1.jpg",
+                "description": "New York City Streets",
+                "tag": "cities"
+            },
+            {
+                "filename": "photo_cities-10.jpg",
+                "description": "Chicago The Bean",
+                "tag": "cities"
+            },
+            {
+                "filename": "photo_cities-8.jpg",
+                "description": "Kyoto Back Streets",
+                "tag": "cities"
+            }
+        ]
+    },
+    {
+        "collectionName": "Photography - Models",  
+        "folder": "photography_models",  
+        "images": [
+            {
+                "filename": "photo_models-12.jpg",
+                "description": "Photoshoot - Donna Book Release Shoot",
+                "tag": "models"
+            },
+            {
+                "filename": "photo_models-6.jpg",
+                "description": "Photoshoot - Meaghan Portrait Shoot",
+                "tag": "models"
+            },
+            {
+                "filename": "photo_models-7.jpg",
+                "description": "Photoshoot - Sarah Portrait Shoot",
+                "tag": "models"
+            }
+        ]
+    },
+    {
+        "collectionName": "Photography - Weddings",  
+        "folder": "photography_weddings",  
+        "images": [
+            {
+                "filename": "photo_weddings-8.jpg",
+                "description": "Elopement Shoot - Khiem and Steph",
+                "tag": "weddings"
+            },
+                        {
+                "filename": "photo_weddings-2.jpg",
+                "description": "Wedding Shoot - Chris and Pam",
+                "tag": "weddings"
+            },
+            {
+                "filename": "photo_weddings-6.jpg",
+                "description": "Wedding Shoot - Panic and Tony",
+                "tag": "weddings"
+            }
+        ]
+    }                                         
+  ]  
