@@ -1,1 +1,32 @@
-<p>gallery works!</p>
+<!-- Page Container -->
+<div class="gallery-container">
+    <!-- Page Header -->
+    <h1>Gallery</h1>
+    <br>
+
+    <!-- Gallery Item Container -->
+    <div class="gallery-items-container">
+
+        <!-- Gallery Images -->
+        <!-- Utilizes Angular's ngFor directive to loop through nest object arrays assigned to the imageGallery property -->
+        <!-- Used to retrieve information to populate the image elements' source and alternative text attributes -->
+        <div *ngFor="let galleryItem of imageGallery">
+            <div>
+                <div>{{galleryItem.folder}}</div>
+
+                <div *ngFor="let image of galleryItem.images">
+                    <div>
+                        {{image.filename}}
+                    </div>
+
+                    <div class="card-body">
+                        <img class="card-img-top" 
+                            [src]="baseImageAssetDirectory + galleryItem.folder + '/' + image.filename"
+                            [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

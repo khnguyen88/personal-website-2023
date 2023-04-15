@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark ">
     <div class="container-fluid">
         <a class="navbar-brand" >Khiem H. Nguyen</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-end" [ngbCollapse]="isMenuCollapsed">
             <div class="navbar-nav">
-                <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.route" [routerLinkActive]="['active']" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">{{item.label}}</a>
+                <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.route" [routerLinkActive]="['active']" (click)="isMenuCollapsed = true">{{item.label}}</a>
             </div>
         </div>
       </div>
