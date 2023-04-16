@@ -13,7 +13,7 @@ import { GalleryComponent } from './component/gallery/gallery.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { HomeComponent } from './component/home/home.component';
 
-import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -31,9 +31,14 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    NgbCarouselModule
+
+    
   ],
-  providers: [],
+  providers: [
+    NgbCarouselConfig
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
