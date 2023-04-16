@@ -46,7 +46,7 @@
             },
             {
                 "filename": "cooking-6.jpg",
-                "description": "Homemade Pho",
+                "description": "Homemade Chicken Ramen",
                 "tag": "food"
             },
             {
@@ -120,25 +120,25 @@
     },
     {
         "collectionName": "Graphic Design",  
-        "folder": "graphic",  
+        "folder": "graphic_design",  
         "images": [
             {
-                "filename": "graphic-1.jpg",
+                "filename": "graphics-1.jpg",
                 "description": "Logo Design",
                 "tag": "graphic"
             },
             {
-                "filename": "graphic-6.jpg",
+                "filename": "graphics-6.jpg",
                 "description": "Benzi Pixel Art",
                 "tag": "graphic"
             },
             {
-                "filename": "graphic-7.jpg",
+                "filename": "graphics-7.jpg",
                 "description": "Winding Root Farm",
                 "tag": "graphic"
             },
             {
-                "filename": "graphic-9.jpg",
+                "filename": "graphics-9.jpg",
                 "description": "AB Realty",
                 "tag": "graphic"
             }

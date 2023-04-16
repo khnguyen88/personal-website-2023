@@ -1,6 +1,6 @@
 [  
     {
-        "collectionName": "Microcontrollers and Electronics",  
+        "interestName": "Microcontrollers and Electronics",  
         "folder": "electronics",  
         "images": [
             {
@@ -21,7 +21,7 @@
         ]
     },
     {
-        "collectionName": "Gardening",  
+        "interestName": "Gardening",  
         "folder": "gardening",  
         "images": [
             {
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "collectionName": "Cooking and Baking",  
+        "interestName": "Cooking and Baking",  
         "folder": "cooking_and_baking",  
         "images": [
             {
@@ -63,28 +63,28 @@
         ]
     },
     {
-        "collectionName": "Graphic Design",  
-        "folder": "graphic",  
+        "interestName": "Graphic Design",  
+        "folder": "graphic_design",  
         "images": [
             {
-                "filename": "graphic-1.jpg",
+                "filename": "graphics-1.jpg",
                 "description": "Logo Design",
                 "tag": "graphic"
             },
             {
-                "filename": "graphic-9.jpg",
+                "filename": "graphics-9.jpg",
                 "description": "AB Realty",
                 "tag": "graphic"
             },
             {
-                "filename": "graphic-6.jpg",
+                "filename": "graphics-6.jpg",
                 "description": "Benzi Pixel Art",
                 "tag": "graphic"
             }
         ]
     },
     {
-        "collectionName": "Arts and Crafts", 
+        "interestName": "Arts and Crafts", 
         "folder": "arts_crafts",  
         "images": [
             {
@@ -93,7 +93,7 @@
                 "tag": "art"
             },
             {
-                "filename": "arts_crafts11.jpg",
+                "filename": "arts_crafts-11.jpg",
                 "description": "Embroidery WIP",
                 "tag": "art"
             },
@@ -105,7 +105,7 @@
         ]
     },
     {
-        "collectionName": "Video Production",  
+        "interestName": "Video Production",  
         "folder": "video_production",  
         "images": [
             {
@@ -126,7 +126,7 @@
         ]
     },
     {
-        "collectionName": "Hiking and Backpacking",  
+        "interestName": "Hiking and Backpacking",  
         "folder": "hiking_and_backpacking",  
         "images": [
             {
@@ -147,7 +147,7 @@
         ]
     },
     {
-        "collectionName": "Photography - Landscapes",  
+        "interestName": "Photography - Landscapes",  
         "folder": "photography_landscapes",  
         "images": [
             {
@@ -168,7 +168,7 @@
         ]
     },
     {
-        "collectionName": "Photography - Astro",  
+        "interestName": "Photography - Astro",  
         "folder": "photography_astros",  
         "images": [
             {
@@ -189,7 +189,7 @@
         ]
     },
     {
-        "collectionName": "Photography - Cities and Streets",  
+        "interestName": "Photography - Cities and Streets",  
         "folder": "photography_cities",  
         "images": [
             {
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "collectionName": "Photography - Models",  
+        "interestName": "Photography - Models",  
         "folder": "photography_models",  
         "images": [
             {
@@ -231,7 +231,7 @@
         ]
     },
     {
-        "collectionName": "Photography - Weddings",  
+        "interestName": "Photography - Weddings",  
         "folder": "photography_weddings",  
         "images": [
             {
