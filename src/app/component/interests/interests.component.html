@@ -1,1 +1,43 @@
-<p>interests works!</p>
+<!-- Page Container -->
+<div class="interests-container">
+    <!-- Page Header -->
+    <h1>Interests</h1>
+    <br>
+
+    <!-- Interests Item Container -->
+    <div class="interests-items-container">
+
+        <!-- Interests Images -->
+        <!-- Utilizes Angular's ngFor directive to loop through nest object arrays assigned to the imageGallery property -->
+        <!-- Used to retrieve information to populate the image elements' source and alternative text attributes -->
+        <!-- Setting the angular image element' loading attribute to "lazy" enables lazy loading for images -->
+        <!-- <div class="card interest-item" *ngFor="let interest of interests">
+            <div>{{interest.interestName}}</div>
+
+            <div *ngFor="let image of interest.images">
+                <div class="card-body">
+                    <img class="card-img-top"
+                        [src]="baseImageAssetDirectory + interest.folder + '/' + image.filename"
+                        [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'"
+                        loading="lazy" />
+                </div>
+            </div>
+        </div> -->
+
+        <div class="card interest-item" *ngFor="let interest of interests" style="width:20%">
+            <div>{{interest.interestName}}</div>
+            <ngb-carousel *ngIf="interests" [showNavigationArrows]="showNavigationArrows"
+                [showNavigationIndicators]="showNavigationIndicators" [interval]="carouselInterval">
+                <ng-template ngbSlide *ngFor="let image of interest.images">
+                    <div class="picsum-img-wrapper">
+                        <img class="card-img-top" [src]="baseImageAssetDirectory + interest.folder + '/' + image.filename"
+                            [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'" loading="lazy" />
+                    </div>
+                    <!-- <div class="carousel-caption">
+                        <p>{{image.description}}</p>
+                    </div> -->
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+</div>

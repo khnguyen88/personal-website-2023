@@ -12,7 +12,7 @@ import { takeUntil } from 'rxjs';
 // We extended the GalleryComponent with the BaseComponent because we need to subscribe to an observable to retrieve our data, and the
 // BaseComponent ensure we unsubscribe to the observable once component is destroyed  
   
-// We implemented the OnInit interface and used to initialize the data used to populate the template
+// We implemented the OnInit interface and used it to initialize the data used to populate the template
 export class GalleryComponent extends BaseComponent implements OnInit{
 
   // The imageGallery property holds the JSON data retrieve as an array of objects
