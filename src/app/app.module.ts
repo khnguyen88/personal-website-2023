@@ -14,6 +14,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { HomeComponent } from './component/home/home.component';
 
 import { NgbCollapseModule, NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgbCollapseModule, NgbCarouselConfig, NgbCarouselModule } from '@ng-boo
     AppRoutingModule,
     HttpClientModule,
     NgbCollapseModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    FontAwesomeModule
 
     
   ],
