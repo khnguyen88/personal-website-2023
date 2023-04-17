@@ -1,9 +1,22 @@
+<!-- Bootstrap Navigation Menu -->
 <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark ">
+
+    <!-- Navigation bar container -->
     <div class="container-fluid">
+
+        <!-- Navigation Bar Brand -->
         <a class="navbar-brand" >Khiem H. Nguyen</a>
+
+        <!-- Bootstrap Hamburger Menu Icon -->
         <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Bootstrap Menu Items -->
+        <!-- ngbCollapse is a Angular Bootstrap directive / attribute required and used to provide way of hiding and showing elements on the page. -->
+        <!-- ngbCollapse is bind to a boolean type variable, isMenuCollapsed, that gets toggled when the hamburger menu item and menu items get clicked. -->
+        <!-- Needed to implement Angular ngbCollapse, so the functionality works. Vanilla Bootstrap does not work properly with Angular. -->
+        <!-- Source: https://ng-bootstrap.github.io/#/components/collapse/examples#navbar -->
         <div class="collapse navbar-collapse justify-content-end" [ngbCollapse]="isMenuCollapsed">
             <div class="navbar-nav">
                 <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.route" [routerLinkActive]="['active']" (click)="isMenuCollapsed = true">{{item.label}}</a>
