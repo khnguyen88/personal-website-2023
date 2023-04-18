@@ -18,7 +18,13 @@ export class ResumeComponent extends BaseComponent implements OnInit {
 
   // The resume property holds the JSON data retrieve as an array of objects
   // To be used to populate data in the Resume Template and we bpage
-  resume: any;
+  resume: any = {} as any;
+
+  // Ran into a minor issue where template/page renders before JSON data is loaded.
+  // Solution is to use pipe async and only load page once data has been loaded and promise has been resolved.
+  // Source: https://stackoverflow.com/questions/44900769/angular-wait-until-i-receive-data-before-loading-template
+  // Declaring the Promise
+  dataLoaded: Promise<boolean>;
 
   // Imported and injected the Resume Service through the class constructor's parameter
   constructor(private resumeService: ResumeService) {
@@ -27,7 +33,10 @@ export class ResumeComponent extends BaseComponent implements OnInit {
 
   // ngOnInit is a callback method that gets called after the Component is initialized
   ngOnInit() {
-    this.resumeService.getResume().pipe(takeUntil(this.componentDestroyed$)).subscribe(result => this.resume = result);
+    this.resumeService.getResume().pipe(takeUntil(this.componentDestroyed$)).subscribe(result => {
+      this.resume = result;
+      this.dataLoaded = Promise.resolve(true);
+    });
   }
 
 }
