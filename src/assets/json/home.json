@@ -1,0 +1,44 @@
+{
+    "name": "Khiem",
+    "intro": "Hi! My name is Khiem.", 
+    "main": [
+        {
+            "title": "Personal",
+            "description": [
+                "I have worked as a professional civil engineer for the last 12 years. As of October 2022, I am a full-stack software engineer at JvR Enterprises, helping organizations develop and maintain their web and desktop applications.",
+                "In addition to a full-time job, I am pursuing a Master's in Applied Computer Science at GVSU, and currently halfway through the program and expect to graduate by 2025."
+            ]
+        }
+    ],
+    "secondary": [
+        {
+            "title": "Software Engineering",
+            "description": [
+                "In terms of tech stack, I primarily use Angular, React, React Native, SQL, and .NET to build web, mobile, and desktop applications.",
+                "The main programming languages that I use on a daily basis are JavaScript, TypeScript, HTML, CSS, C#, and SQL.",
+                "On my free time I like to dabble a bit with web game development and microcontrollers."
+            ]
+        },
+        {
+            "title": "Civil Engineering",
+            "description": [
+                "Prior to my career change, I worked on a varierty of urban and environmental projects that ranges from developing and designing stormwater management facilities, drainage system, and water and sewer utility lines to floodplain modeling and analysis for rivers and streams.",
+                "All of which I quite enjoyed and found quite meaningful and rewarding, and I do hope to someday merge my professions together."
+            ]
+        },
+        {
+            "title": "Passion",
+            "description": [
+                "Outside of my professions, my main hobbies and interests are photography, gardening, cooking, hiking/backpacking, and reading.",
+                "As a lifelong learner and eclectic dabbler, I am always open to trying many new activities and hobbies or expanding upon the ones I know."
+            ]
+        },
+        {
+            "title": "Philosophy",
+            "description": [
+                "My main philosophy in life is to always to do good, be kind, stay curious, be open to experience, and keep learning.",
+                "And If I ever run into any challenges, I learned they're more manageable if I break them into smaller pieces and if utilize other experiences and skills gained from other aspects of my life to tackle them."
+            ]
+        }
+    ]
+}
