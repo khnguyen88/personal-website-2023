@@ -1,1 +1,37 @@
-<p>footer works!</p>
+<!-- Footer Container -->
+<div class="footer-container">
+
+    <!-- Footer Item Container -->
+
+    <!-- Three Column Layout -->
+    <!-- Left Footer Item -->
+    <div class="footer-item-container left-footer-item">
+        <!-- Basic Information -->
+        <p>{{footerPersonalInfo.name}}</p>
+        <p>{{footerPersonalInfo.profession1}}</p>
+        <p>{{footerPersonalInfo.profession2}}</p>
+
+    </div>
+
+    <!-- Center Footer Item -->
+    <!-- Personal ontacts -->
+    <div class="footer-item-container center-footer-item">
+        <p>{{footerContactInfo.header}}</p>
+        <p>{{footerContactInfo.phoneNumber}}</p>
+        <p>{{footerContactInfo.emailAddress}}</p>
+    </div>
+
+    <!-- Right Footer Item -->
+    <!-- Personal Links -->
+    <!-- Utilizes Angular's ngFor directive to loop through an object array assigned to the footerPersonalLinks.links property -->
+    <!-- Used to retrieve information to populate the Font Awesome Icon components' "icon" property and the anchor elements
+         "href" and "alt" attributes -->
+    <div class="footer-item-container right-footer-item">
+        <p>{{footerPersonalLinks.header}}</p>
+        <div *ngFor="let link of footerPersonalLinks.links">
+            <a [href]="link.url" alt="'Link to my personal '+ link.name + ' account.'" target="_blank">
+                <fa-icon [icon]="link.fontAwesomeIcon"></fa-icon>
+            </a>
+        </div>
+    </div>
+</div>

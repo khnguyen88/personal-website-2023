@@ -1,7 +1,8 @@
 {
     "personal": {
         "name": "Khiem Nguyen",
-        "label": "Software Engineer, P.E.",
+        "title1": "Software Engineer, P.E.",
+        "title2": "Civil Engineer, P.E.",
         "email": "khnguyen88@gmail.com",
         "phone": "(410) 900-3533",
         "url": "",
@@ -10,11 +11,16 @@
             "countryCode": "US",
             "region": "MI"
         },
-        "profiles": [{
+        "profiles": [
+            {
             "network": "Github",
-            "username": "khnguyen88",
             "url": "https://github.com/khnguyen88/"
-        }]
+            },
+            {
+            "name": "Linkedin",
+            "url": "https://www.linkedin.com/in/khiem-nguyen-61771829/"
+            }
+        ]
     },
     "education": [{
         "degree": "Master of Science",

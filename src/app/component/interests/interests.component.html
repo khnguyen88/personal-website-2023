@@ -24,6 +24,9 @@
             </div>
         </div> -->
 
+        <!-- Angular's Bootstrap Carousel Component nested within Boostrap Card Containers/Classes -->
+        <!-- Sources: https://ng-bootstrap.github.io/#/components/carousel/examples -->
+
         <div class="card interest-item" *ngFor="let interest of interests" style="width:20%">
             <div>{{interest.interestName}}</div>
             <ngb-carousel *ngIf="interests" [showNavigationArrows]="showNavigationArrows"

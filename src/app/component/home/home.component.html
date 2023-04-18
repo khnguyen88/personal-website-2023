@@ -1,1 +1,60 @@
-<p>home works!</p>
+<!-- Page Container -->
+<!-- Ran into a minor issue where template/page renders before JSON data is loaded. -->
+<!-- Solution is to use pipe async and only load page once data has been loaded and promise has been resolved -->
+<!-- Issue occurred where there is a complex JSON tree that is used to populate texts. Apply to pages on an as needed bases -->
+<!-- Source: https://stackoverflow.com/questions/44900769/angular-wait-until-i-receive-data-before-loading-template -->
+<div class="home-container" *ngIf="dataLoaded | async">
+    <!-- Page Header -->
+    <h1>About Me</h1>
+    <br>
+
+    <!-- Interests Item Container -->
+    <!-- Divided into two sections -->
+    <div class="home-items-container">
+        <!-- Personal Profile Section -->
+        <div class="home-left-section" style="width:40%">
+            <img class="profile-image" [src]="baseImageAssetDirectory + homeData.profileImage"
+                [alt]="'Profile Picture - ' + homeData.name"/>
+        </div>
+
+        <!-- Personal About Me Section -->
+        <div class="home-right-section" style="width:40%">
+
+            <!-- About Me Primary Information -->
+            <!-- Utilizes Angular's ngFor directive to loop through nest object arrays assigned to the homeData property -->
+            <!-- Used to retrieve information to populate about me descriptions on the home page -->
+            <div class="card home-item primary" *ngFor="let primaryItem of homeData.primary">
+                <div class="intro">
+                    <p>{{homeData.intro}}</p>
+                </div>
+                <div class="primary-description">
+                    <p *ngFor="let paragraph of primaryItem.description">
+                        {{paragraph}}
+                    </p>
+                </div>
+    
+
+            </div>
+            
+            <!-- About Me Secondary Information -->
+            <!-- Utilized Angular's Bootstrap Carousel Component to create dynamically changing content-->
+            <!-- Angular's Bootstrap Carousel Component nested within Boostrap Card Containers/Classes -->
+            <!-- Sources: https://ng-bootstrap.github.io/#/components/carousel/examples -->
+            <div class="card home-item secondary">
+                <ngb-carousel *ngIf="homeData" [showNavigationArrows]="showNavigationArrows"
+                    [showNavigationIndicators]="showNavigationIndicators" [interval]="carouselInterval">
+                    <ng-template ngbSlide *ngFor="let secondaryItem of homeData.secondary">
+                        <div class="secondary-header">
+                            {{secondaryItem.header}}
+                        </div>
+                        <div class="secondary-description">
+                            <p *ngFor="let paragraph of secondaryItem.description">
+                                {{paragraph}}
+                            </p>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,13 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+  
+export class NavbarComponent implements OnInit{
+
+  // Declaring properties used to populated menu items for Angular's Bootstrap menu items
   menuItems: any[];
   menuItemHome: any;
 
+  // isMenuCollapsed is a boolean type property that is binded to Angular's Bootstrap Navbar directive, ngbCollapse, and gets toggle when the hamburger menu item and menu items get clicked.
+  // This property is used to handle the expansion or collapse of the menu-items on click during the mobile view. Vanilla Bootstrap does not work properly with Angular.
   isMenuCollapsed: boolean = true;
 
-  ngOnInit(){
+  // ngOnInit is a callback method that gets called after the Component is initialized
+  ngOnInit() {
+    
+    // Populating the menuItems array with a collection of objects used to populate the Angular Bootstrap Navigation Item
     this.menuItems = [
       {label: 'Home', route: '/home'},
       {label: 'Resume', route: '/resume'},
@@ -21,26 +29,8 @@ export class NavbarComponent {
       {label: 'Contact', route: '/contact'},
     ];
 
+  // Populating the menuItemHome used to populated home menu item
     this.menuItemHome = {label: 'Home', route: '/home'};
-
-  }
-
-
-  clickMe(){
-    // TODO: Write a function that will collapse navigation menu upon link click in mobile mode. Currently default boostrap does not support
-    // this behavior
-
-    // https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-collapse.php
-    // https://getbootstrap.com/docs/5.3/components/collapse/#how-it-works
-    // https://stackoverflow.com/questions/49526681/how-to-call-javascript-functions-from-typescript-in-angular-5
-
-    if (window.innerWidth < 500){
-      alert("Less than 500");
-
-    }
-    else{
-      alert("Greater than 500");
-    }
 
   }
 
