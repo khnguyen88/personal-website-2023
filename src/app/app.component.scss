@@ -13,3 +13,47 @@ body, html {
 .outlet-container {
     flex: 1 0 auto;
 }
+
+// Projects Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .projects-container{
+    padding: 1em 2em 1em 2em;
+
+    .projects-header{
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects-items-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+
+        .project-item{
+            max-width: 30em;
+            margin: 0em 1em 2em 1em;
+
+            .card-body .card-text .project-header {
+                margin-bottom: 1em;
+            }
+
+
+            .card-body .card-text .project-technologies{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+
+                .tech-item{
+                    padding-right: 1em;
+                    text-align: center;
+                    font-style:italic;
+                }
+
+            }
+        }
+    }
+
+}

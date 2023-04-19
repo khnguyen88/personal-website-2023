@@ -1,1 +1,33 @@
-<p>projects works!</p>
+<!-- Page Container -->
+<div class="projects-container" *ngIf="dataLoaded | async">
+    <!-- Page Header -->
+    <h1 class="projects-header">Projects</h1>
+    <br>
+
+    <!-- Projects Item Container -->
+    <div class="projects-items-container">
+
+        <!-- Projects Images -->
+        <!-- Utilizes Angular's ngFor directive to loop through nest object arrays assigned to the projectsData property -->
+        <!-- Used to retrieve information to populate the projects information and image elements' source and alternative text attributes -->
+        <!-- Uses Boostrap Card Classes -->
+
+        <div class="card project-item" *ngFor="let projectData of projectsData.projects">
+            <div class="card-body">
+                <div class="card-text">
+                    <h3 class="project-header">{{projectData.name}}</h3>
+                    <p class="project-description">{{projectData.description}}</p>
+                    <div class="project-technologies">
+                        <div class="tech-item" *ngFor="let tag of projectData.technologies">
+                            {{tag}}
+                        </div>
+                    </div>
+                </div>
+                <img class="card-img-top"
+                    [src]="baseImageAssetDirectory + projectData.image.folder + '/' + projectData.image.filename"
+                    [alt]="'Description:  ' + projectData.image.description + '.'"/>
+            </div>
+        </div>
+
+    </div>
+</div>
