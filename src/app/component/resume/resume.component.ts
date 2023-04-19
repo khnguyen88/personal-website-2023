@@ -33,6 +33,9 @@ export class ResumeComponent extends BaseComponent implements OnInit {
 
   // ngOnInit is a callback method that gets called after the Component is initialized
   ngOnInit() {
+
+    // We call and subscribe to the getResume() method to retrieve resume data from JSON file and store it within a property
+    // We utilized takeUntil to declarative unsubscribe to observable after Component is destroyed
     this.resumeService.getResume().pipe(takeUntil(this.componentDestroyed$)).subscribe(result => {
       this.resume = result;
       this.dataLoaded = Promise.resolve(true);
