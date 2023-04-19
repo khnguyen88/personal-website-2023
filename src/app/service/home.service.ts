@@ -8,7 +8,7 @@ export class HomeService {
 
   constructor(private httpService: HttpClient) { }
 
-  // The getHomeData() method retrieves and return interests data and related image data from JSON
+  // The getHomeData() method retrieves and return home (personal about me) data and related image data from JSON
   getHomeData() {
 
     // This method constructs and calls the HttpClient's get() method, which creates an observable and calls a get request to
