@@ -1,0 +1,347 @@
+{
+    "images": [
+        {
+            "collectionName": "Arts and Crafts", 
+            "folder": "arts_crafts", 
+            "filename": "arts_crafts-1.jpg",
+            "description": "Glass laser engraving",
+            "tag": "art"
+        },
+        {
+            "collectionName": "Arts and Crafts", 
+            "folder": "arts_crafts", 
+            "filename": "arts_crafts-2.jpg",
+            "description": "Glass collection engraved",
+            "tag": "art"
+        },
+        {
+            "collectionName": "Arts and Crafts", 
+            "folder": "arts_crafts", 
+            "filename": "arts_crafts-4.jpg",
+            "description": "Watercolor art piece",
+            "tag": "art"
+        },
+        {
+            "collectionName": "Arts and Crafts", 
+            "folder": "arts_crafts", 
+            "filename": "arts_crafts-12.jpg",
+            "description": "Watercolor art piece",
+            "tag": "art"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-1.jpg",
+            "description": "Homemade Borscht",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-2.jpg",
+            "description": "Canning Apple Butter",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-3.jpg",
+            "description": "Tomato Salad",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-6.jpg",
+            "description": "Homemade Chicken Ramen",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-5.jpg",
+            "description": "Homemade Pho",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Cooking and Baking",  
+            "folder": "cooking_and_baking",  
+            "filename": "cooking-10.jpg",
+            "description": "Homemade Sourdough Bread",
+            "tag": "food"
+        },
+        {
+            "collectionName": "Electronics",  
+            "folder": "electronics",  
+            "filename": "electronics-1.jpg",
+            "description": "Robotic Competition",
+            "tag": "electronics"
+        },
+        {
+            "collectionName": "Electronics",  
+            "folder": "electronics",  
+            "filename": "electronics-2.jpg",
+            "description": "Raspberry Pi - RetroPie",
+            "tag": "electronics"
+        },
+        {
+            "collectionName": "Electronics",  
+            "folder": "electronics",  
+            "filename": "electronics-3.jpg",
+            "description": "Breadboard LED Testing",
+            "tag": "electronics"
+        },
+        {
+            "collectionName": "Electronics",  
+            "folder": "electronics",  
+            "filename": "electronics-6.jpg",
+            "description": "Arduino Temperature Driven Humidifier",
+            "tag": "electronics"
+        },
+        {
+            "collectionName": "Gardening",  
+            "folder": "gardening", 
+            "filename": "gardening-1.jpg",
+            "description": "Raised Box Garden",
+            "tag": "gardening"
+        },
+        {
+            "collectionName": "Gardening",  
+            "folder": "gardening", 
+            "filename": "gardening-3.jpg",
+            "description": "Growing Microgreens",
+            "tag": "gardening"
+        },
+        {
+            "collectionName": "Gardening",  
+            "folder": "gardening",
+            "filename": "gardening-6.jpg",
+            "description": "Growing Cat Grass",
+            "tag": "gardening"
+        },
+        {
+            "collectionName": "Gardening",  
+            "folder": "gardening",
+            "filename": "gardening-7.jpg",
+            "description": "Growing Succulents",
+            "tag": "gardening"
+        },
+        {
+            "collectionName": "Gardening",  
+            "folder": "gardening",
+            "filename": "gardening-12.jpg",
+            "description": "Growing Oyster Mushroom",
+            "tag": "gardening"
+        },
+        {
+            "collectionName": "Graphic Design",  
+            "folder": "graphic_design",  
+            "filename": "graphics-1.jpg",
+            "description": "Logo Design",
+            "tag": "graphic"
+        },
+        {
+            "collectionName": "Graphic Design",  
+            "folder": "graphic_design",  
+            "filename": "graphics-6.jpg",
+            "description": "Benzi Pixel Art",
+            "tag": "graphic"
+        },
+        {
+            "collectionName": "Graphic Design",  
+            "folder": "graphic_design",  
+            "filename": "graphics-7.jpg",
+            "description": "Winding Root Farm",
+            "tag": "graphic"
+        },
+        {
+            "collectionName": "Graphic Design",  
+            "folder": "graphic_design",  
+            "filename": "graphics-9.jpg",
+            "description": "AB Realty",
+            "tag": "graphic"
+        },
+        {
+            "collectionName": "Hiking and Backpacking",  
+            "folder": "hiking_and_backpacking",  
+            "filename": "photo_hiking-1.jpg",
+            "description": "Zion National Park Band Album",
+            "tag": "hiking"
+        },
+        {
+            "collectionName": "Hiking and Backpacking",  
+            "folder": "hiking_and_backpacking",
+            "filename": "photo_hiking-10.jpg",
+            "description": "Acadia National Park Hike",
+            "tag": "hiking"
+        },
+        {
+            "collectionName": "Hiking and Backpacking",  
+            "folder": "hiking_and_backpacking",
+            "filename": "photo_hiking-8.jpg",
+            "description": "Acadia National Park Hike",
+            "tag": "hiking"
+        },
+        {
+            "collectionName": "Hiking and Backpacking",  
+            "folder": "hiking_and_backpacking",
+            "filename": "photo_hiking-13.jpg",
+            "description": "Dolly Sods Hike",
+            "tag": "hiking"
+        },
+        {
+            "collectionName": "Photography - Astro",  
+            "folder": "photography_astros",  
+            "filename": "photo_astros-1.jpg",
+            "description": "Catalina Island Milky Way from Campground",
+            "tag": "astro"
+        },
+        {
+            "collectionName": "Photography - Astro",  
+            "folder": "photography_astros",  
+            "filename": "photo_astros-6.jpg",
+            "description": "Bryce Canyon Stars",
+            "tag": "astro"
+        },
+        {
+            "collectionName": "Photography - Astro",  
+            "folder": "photography_astros",  
+            "filename": "photo_astros-12.jpg",
+            "description": "Hart Prairie Preserve Milky Way From Cabin",
+            "tag": "astro"
+        },
+        {
+            "collectionName": "Photography - Astro",  
+            "folder": "photography_astros",  
+            "filename": "photo_astros-13.jpg",
+            "description": "Hart Prairie Preserve Milky Way From Fields",
+            "tag": "astro"
+        },
+        {
+            "collectionName": "Photography - Cities",  
+            "folder": "photography_cities",  
+            "filename": "photo_cities-1.jpg",
+            "description": "New York City Streets",
+            "tag": "cities"
+        },
+        {
+            "collectionName": "Photography - Cities",  
+            "folder": "photography_cities",  
+            "filename": "photo_cities-2.jpg",
+            "description": "Saigon Public Square",
+            "tag": "cities"
+        },
+        {
+            "collectionName": "Photography - Cities",  
+            "folder": "photography_cities",  
+            "filename": "photo_cities-5.jpg",
+            "description": "Kyoto Buddhist Shrine",
+            "tag": "cities"
+        },
+        {
+            "collectionName": "Photography - Cities",  
+            "folder": "photography_cities",  
+            "filename": "photo_cities-11.jpg",
+            "description": "Chicago Lake View",
+            "tag": "cities"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",  
+            "filename": "photo_landscapes-1.jpg",
+            "description": "Zion National Park - The Narrows",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",
+            "filename": "photo_landscapes-2.jpg",
+            "description": "Zion National Park - Angel's Landing",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",
+            "filename": "photo_landscapes-4.jpg",
+            "description": "Bryce Canyon National Park - Unknown Trail",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",
+            "filename": "photo_landscapes-12.jpg",
+            "description": "Maine Coastlines",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",
+            "filename": "photo_landscapes-14.jpg",
+            "description": "Indian Peaks Wilderness - Lake Isabelle",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Landscapes",  
+            "folder": "photography_landscapes",
+            "filename": "photo_landscapes-19.jpg",
+            "description": "Pictured Rocks National Lakeshore",
+            "tag": "landscapes"
+        },
+        {
+            "collectionName": "Photography - Models",  
+            "folder": "photography_models", 
+            "filename": "photo_models-2.jpg",
+            "description": "Boxing Match - Team Floyd - Ringside",
+            "tag": "sports"
+        },
+        {
+            "collectionName": "Photography - Models",  
+            "folder": "photography_models", 
+            "filename": "photo_models-4.jpg",
+            "description": "Boxing Match - World Champion - Gerome Quigley",
+            "tag": "sports"
+        },
+        {
+            "collectionName": "Photography - Models",  
+            "folder": "photography_models", 
+            "filename": "photo_models-6.jpg",
+            "description": "Photoshoot - Meaghan Portrait Shoot",
+            "tag": "models"
+        },
+        {
+            "collectionName": "Photography - Models",  
+            "folder": "photography_models", 
+            "filename": "photo_models-7.jpg",
+            "description": "Photoshoot - Sarah Portrait Shoot",
+            "tag": "models"
+        },
+        {
+            "collectionName": "Photography - Models",  
+            "folder": "photography_models", 
+            "filename": "photo_models-12.jpg",
+            "description": "Photoshoot - Donna Book Release Shoot",
+            "tag": "models"
+        },
+        {
+            "collectionName": "Photography - Weddings",  
+            "folder": "photography_weddings",  
+            "filename": "photo_weddings-2.jpg",
+            "description": "Wedding Shoot - Chris and Pam",
+            "tag": "weddings"
+        },
+        {
+            "collectionName": "Photography - Weddings",  
+            "folder": "photography_weddings",  
+            "filename": "photo_weddings-6.jpg",
+            "description": "Wedding Shoot - Panic and Tony",
+            "tag": "weddings"
+        },
+        {
+            "collectionName": "Photography - Weddings",  
+            "folder": "photography_weddings",  
+            "filename": "photo_weddings-8.jpg",
+            "description": "Elopement Shoot - Khiem and Steph",
+            "tag": "weddings"
+        }
+    ]
+}                                         

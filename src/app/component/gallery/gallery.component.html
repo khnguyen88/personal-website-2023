@@ -1,7 +1,17 @@
 <!-- Page Container -->
 <div class="gallery-container">
     <!-- Page Header -->
-    <h1>Gallery</h1>
+    <h1 class="gallery-header">Gallery</h1>
+
+
+    <div class="gallery-button">
+
+        <!-- Special Button to Shuffle Gallery Images Around -->
+        <!-- Utilized Angular's Event Binding, to bind the button's click event to the onClickShuffle() method, which shuffles the galleryData -->
+        <button type="button" class="btn btn-primary" (click)="onClickShuffle()">
+            Shuffle Gallery
+        </button>
+    </div>
     <br>
 
     <!-- Gallery Item Container -->
@@ -12,17 +22,14 @@
         <!-- Used to retrieve information to populate the image elements' source and alternative text attributes -->
         <!-- Setting the angular image element' loading attribute to "lazy" enables lazy loading for images -->
         <!-- Uses Boostrap Card Classes -->
-        <div *ngFor="let galleryItem of imageGallery">
-            <div>
-                <div class="card gallery-item" *ngFor="let image of galleryItem.images">
-                    <div class="card-body">
-                        <img class="card-img-top" 
-                            [src]="baseImageAssetDirectory + galleryItem.folder + '/' + image.filename"
-                            [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'"
-                            loading="lazy" />
-                    </div>
+        <div class="card gallery-item" *ngFor="let image of imageGallery">
+                <div class="card-body">
+                    <img class="card-img-top" 
+                        [src]="baseImageAssetDirectory + image.folder + '/' + image.filename"
+                        [alt]="'Image Tag: ' + image.tag + '. Description:  ' + image.description + '.'"
+                        loading="lazy" />
                 </div>
-            </div>
         </div>
+
     </div>
 </div>

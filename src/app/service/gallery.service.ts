@@ -15,6 +15,6 @@ export class GalleryService {
     // This method constructs and calls the HttpClient's get() method, which creates an observable and calls a get request to
     // retrieves data from a JSON file when subscribed, and will return the data.
 
-    return this.httpService.get('../assets/json/gallery-images.json');
+    return this.httpService.get('../assets/json/gallery-images-v3.json');
   }
 }
