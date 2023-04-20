@@ -143,6 +143,14 @@ body, html {
                     font-weight: bold;
                     margin-bottom: 1em;
                 }
+
+                .carousel-control-prev-icon {
+                    opacity: 0;
+                }
+
+                .carousel-control-next-icon {
+                    opacity: 0;
+                }
             }
         }
 
@@ -243,7 +251,7 @@ body, html {
     }
 }
 
-@media screen and (max-height:720px) {
+@media screen and (max-height:960px) {
     ::ng-deep .home-container {
         padding: 1em 2em 1em 2em;
         height: fit-content;

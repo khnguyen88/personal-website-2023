@@ -25,9 +25,9 @@ export class HomeComponent extends BaseComponent implements OnInit {
 
   // Initialized navigational attributes for Angular's Bootstrap Carousel Component. 
   // These will disable the navigational arrows and items electors in the carousel.
-  showNavigationArrows: boolean = false;
+  showNavigationArrows: boolean = true;
   showNavigationIndicators: boolean = false;
-  carouselInterval: number = 10000;
+  carouselInterval: number = 15000;
 
   // Ran into a minor issue where template/page renders before JSON data is loaded. Solution is to use pipe async.
   // Solution is to use pipe async and only load page once data has been loaded and promise has been resolved.
