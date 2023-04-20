@@ -8,6 +8,14 @@ body, html {
     flex-direction: column;
     min-height: 100vh;
     overflow:auto;
+
+    // Newly imported fonts from google
+    // Source: https: //fonts.google.com/
+    // Lato|Roboto|Oswald|Montserrat:400,500,600,700,800,900|Poppins|Futura|Noto+Sans|Raleway|Open+San|Schibsted+Grotesk|Ubuntu <- san-serif, favorites: Montserrat
+    // Alegreya|Playfair+Display|Merriweather|Montserrat+Alternate|Lora <- serif, favorites: Lora & Merriweather
+    // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Default san-serif
+    // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; // Default serif
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .outlet-container {
@@ -112,6 +120,7 @@ body, html {
 
     .home-header {
         text-align: center;
+        font-weight: 800;
     }
 
     .home-items-container {
@@ -167,7 +176,7 @@ body, html {
 }
 
 @media screen and ((min-width:2048px) and (min-height:1024px)) {
-::ng-deep .home-container {
+    ::ng-deep .home-container {
 
         .home-items-container {
 
@@ -199,6 +208,7 @@ body, html {
 
         .home-header {
             text-align: center;
+            margin-bottom: 2em;
         }
 
         .home-items-container {
@@ -258,8 +268,8 @@ body, html {
 
         .home-header {
             text-align: center;
+            margin-bottom: 2em;
         }
-
         .home-items-container {
             display: flex;
             flex-direction: column;
@@ -321,6 +331,8 @@ body, html {
     .interests-header {
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .interests-items-container {
@@ -337,6 +349,8 @@ body, html {
 
             .card-body .card-text .interest-header {
                 margin-bottom: 1em;
+                text-align: center;
+                font-weight: 600;
             }
         }
     }
@@ -354,6 +368,8 @@ body, html {
     .projects-header{
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .projects-items-container{
@@ -370,6 +386,8 @@ body, html {
 
             .card-body .card-text .project-header {
                 margin-bottom: 1em;
+                text-align: center;
+                font-weight: 600;
             }
 
 
@@ -398,6 +416,8 @@ body, html {
     .gallery-header {
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .gallery-button-container {
