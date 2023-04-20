@@ -158,6 +158,31 @@ body, html {
     }
 }
 
+@media screen and ((min-width:2048px) and (min-height:1024px)) {
+::ng-deep .home-container {
+
+        .home-items-container {
+
+            .home-right-section {
+                width: 40vw;
+                height: auto;
+                font-size: 1.25rem;
+
+                .primary {
+                    height: 50%;
+
+                    .intro {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
 
 @media screen and (max-width:840px) {
 ::ng-deep .home-container {
@@ -194,6 +219,7 @@ body, html {
                 .secondary {
                     margin-top: 20px;
                     height: max-content;
+                    width: 100%;
 
                     .secondary-header {
                         font-style: italic;
@@ -243,6 +269,7 @@ body, html {
 
                 .primary {
                     height: 50%;
+                    width: 100%;
 
                     .intro {
                         font-weight: bold;
@@ -253,6 +280,7 @@ body, html {
                 .secondary {
                     margin-top: 20px;
                     height: max-content;
+                    width: 100%;
 
                     .secondary-header {
                         font-style: italic;
