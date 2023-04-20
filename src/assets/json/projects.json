@@ -1,0 +1,103 @@
+{
+     "projects": [
+        {
+            "name": "Personal Website",
+            "description": "Designed and developed a responsive personal website. The website showcases a collection of projects and creative works and serves to enhance public outreach.",
+            "technologies": ["Angular", "TypeScript", "HTML", "SCSS", "Bootstrap"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-0.jpg",
+                    "description": "Personal Website"
+                }
+        },
+        {
+            "name": "Mock Pizza Restaurant Website",
+            "description": "Created a responsive website for a mock pizza restaurant.The website features a sleak and modern design.",
+            "technologies": ["Angular", "TypeScript", "HTML", "SCSS", "Bootstrap"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-7.jpg",
+                    "description": "Mock Pizza Restaurant Website"
+                }
+        },
+        {
+            "name": "Mock Blog Site",
+            "description": "Developed a minimialistic blog site with basic authentication and authorization features. The site allows authorized users to create, edit, and delete blogs and comments, which are stored in a SQLite database.",
+            "technologies": ["Ruby-on-Rails", "Rails", "Ruby", "HTML", "CSS", "JavaScript", "SQL"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-9.jpg",
+                    "description": "Mock Blog Site"
+                }
+        },
+        {
+            "name": "Weather Mobile App",
+            "description": "Built a multi-screen weather app using React Native and a weather API that provides local weather data based on location coordinates. User input data is stored and retrieved via Google Firebase, enabling users to access weather information from anywhere and at any time.",
+            "technologies": ["React Native", "Google Firebase"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-6.jpg",
+                    "description": "Weather Mobile App"
+                }
+        },
+        {
+            "name": "NannyHelper App",
+            "description": "Created a mobile app tailored to parents and babysitters that enables them to schedule and manage personal information through a user profile. The app includes features such as photo sharing and a search function for childcare YouTube videos.",
+            "technologies": ["React Native"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-5.jpg",
+                    "description": "NannyHelper App"
+                }
+        },
+        {
+            "name": "Snake Game JS",
+            "description": "Designed and developed a responsive webpage that features a variant of the classic game Snake. The game includes many features such as multiple types of food and in-game color change, and it scales dynamically to the size of the screen to provide an 80's retro aesthetic.",
+            "technologies": ["HTML", "CSS", "JavaScript"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-8.jpg",
+                    "description": "Snake Game JS"
+                }
+        },
+        {
+            "name": "Pong Game JS",
+            "description": "Developed a single-player Pong game against a PC-controlled paddle that scales dynamically to the size of the screen. The game includes a series of unit tests written using JEST, which helps to ensure its reliability and performance.",
+            "technologies": ["HTML", "CSS", "JavaScript", "JEST"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-2.jpg",
+                    "description": "Pong Game JS"
+                }
+        },
+        {
+            "name": "Game of Life Simulation",
+            "description": "Programmed a terminal text-based cell simulation using Python that allows users to define the iteration rules for neighboring cells. The simulation provides a unique and interactive way to explore cellular automata and patterns.",
+            "technologies": ["Python"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-3.jpg",
+                    "description": "Game of Life Simulation"
+                }
+        },
+        {
+            "name": "Climate Control Regulator",
+            "description": "Built a climate regulator using Arduino IDE that features a sensor for measuring and displaying humidity and temperature on an LCD monitor. The regulator triggers a 5V fog maker if the sensor values reach a specific threshold, enabling users to control the climate in a closed environment.",
+            "technologies": ["Arduino IDE"],
+            "image": 
+                {
+                    "folder": "projects",  
+                    "filename": "project-4.jpg",
+                    "description": "Climate Control Regulator"
+                }
+        }
+    ]
+}

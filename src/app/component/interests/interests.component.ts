@@ -23,11 +23,12 @@ export class InterestsComponent extends BaseComponent implements OnInit {
   // To be used to populate data in the Interests Template and image elements attributes
   baseImageAssetDirectory: string = "../../../assets/images/";
 
+  // NOTE: NOT NEEDED ANYMORE. LEFT TO SHOW WORK I DID.
   // Initialized navigational attributes for Angular's Bootstrap Carousel Component. 
   // These will disable the navigational arrows and items electors in the carousel.
-  showNavigationArrows: boolean = false;
-  showNavigationIndicators: boolean = false;
-  carouselInterval: number = 2000;
+  // showNavigationArrows: boolean = false;
+  // showNavigationIndicators: boolean = false;
+  // carouselInterval: number = 5000;
 
   // Imported and injected the Interests Service through the class constructor's parameter
   constructor(private interestsService: InterestsService) {

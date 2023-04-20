@@ -13,3 +13,418 @@ body, html {
 .outlet-container {
     flex: 1 0 auto;
 }
+
+
+
+// Footer Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .footer-container {
+    color: var(--bs-navbar-active-color);
+    padding: 1em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .footer-item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .footer-section-header{
+            margin-bottom: .5em;
+        }
+
+        .footer-item-hideable{
+            margin-bottom: .25em;
+        }
+
+
+        .icons-container{
+            margin-top: .5em;
+            width: calc(100% + 2em);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .colorme{
+                color:white;
+            }
+
+            .colorme:hover {
+                color: grey;
+            }
+        }
+    }
+
+    .footer-section-header{
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    ::ng-deep .footer-container {
+        background-color: rgb(162, 51, 51);
+        color: var(--bs-navbar-active-color);
+        padding: 1em 2em 1em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .footer-item-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .icons-container {
+                    margin-top: 0em;
+                    width: 40vw;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+            
+                .colorme {
+                        color: white;
+                    }
+                
+                    .colorme:hover {
+                        color: grey;
+                    }
+            }
+
+            .footer-item-hideable{
+                display: none;
+            }
+        }
+
+    }
+}
+
+
+// Home Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .home-container {
+    padding: 1em 2em 1em 2em;
+    height: calc(100vh - 56px - 128px - 10em);
+
+    .home-header {
+        text-align: center;
+    }
+
+    .home-items-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: calc(100vh - 56px - 128px - 10em);
+
+
+        .home-right-section {
+            width: 40vw;
+            height:auto;
+
+            .primary {
+                height: 50%;
+
+                .intro {
+                    font-weight: bold;
+                    font-size: 1.25rem;
+                }
+            }
+
+            .secondary {
+                margin-top: 2em;
+                height: 50%;
+
+                .secondary-header {
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-bottom: 1em;
+                }
+
+                .carousel-control-prev-icon {
+                    opacity: 0;
+                }
+
+                .carousel-control-next-icon {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .home-left-section {
+            .profile-image {
+                max-height: auto;
+                max-width: 15vw;
+                min-width: 250px;
+                border-radius: 50%;
+            }
+
+        }
+    }
+}
+
+@media screen and ((min-width:2048px) and (min-height:1024px)) {
+::ng-deep .home-container {
+
+        .home-items-container {
+
+            .home-right-section {
+                width: 40vw;
+                height: auto;
+                font-size: 1.25rem;
+
+                .primary {
+                    height: 50%;
+
+                    .intro {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width:840px) {
+::ng-deep .home-container {
+        padding: 1em 2em 1em 2em;
+        height: fit-content;
+
+        .home-header {
+            text-align: center;
+        }
+
+        .home-items-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+
+            .home-right-section {
+                margin-top: 2em;
+                margin-bottom: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .primary {
+                    height: 50%;
+            
+                    .intro {
+                        font-weight: bold;
+                        font-size: 1.25rem;
+                    }
+                }
+                .secondary {
+                    margin-top: 20px;
+                    height: max-content;
+                    width: 100%;
+
+                    .secondary-header {
+                        font-style: italic;
+                        font-weight: bold;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            .home-left-section{
+                margin-top: 1em;
+                
+                .profile-image {
+                    max-height: auto;
+                    max-width: 15vw;
+                    min-width: 250px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height:960px) {
+    ::ng-deep .home-container {
+        padding: 1em 2em 1em 2em;
+        height: fit-content;
+
+        .home-header {
+            text-align: center;
+        }
+
+        .home-items-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: auto;
+
+            .home-right-section {
+                margin-top: 2em;
+                margin-bottom: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .primary {
+                    height: 50%;
+                    width: 100%;
+
+                    .intro {
+                        font-weight: bold;
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .secondary {
+                    margin-top: 20px;
+                    height: max-content;
+                    width: 100%;
+
+                    .secondary-header {
+                        font-style: italic;
+                        font-weight: bold;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            .home-left-section {
+                margin-top: 1em;
+
+                .profile-image {
+                    max-height: auto;
+                    max-width: 15vw;
+                    min-width: 250px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+// Interests Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .interests-container {
+    padding: 1em 2em 1em 2em;
+
+    .interests-header {
+        text-align: center;
+        width: 100%;
+    }
+
+    .interests-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+
+        .interest-item {
+            max-width: 30em;
+            margin: 0em 1em 2em 1em;
+
+            .card-body .card-text .interest-header {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+}
+
+
+
+
+// Projects Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .projects-container{
+    padding: 1em 2em 1em 2em;
+
+    .projects-header{
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects-items-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+
+        .project-item{
+            max-width: 30em;
+            margin: 0em 1em 2em 1em;
+
+            .card-body .card-text .project-header {
+                margin-bottom: 1em;
+            }
+
+
+            .card-body .card-text .project-technologies{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 1em;
+
+                .tech-item{
+                    padding-right: 1em;
+                    text-align: center;
+                    font-style:italic;
+                }
+
+            }
+        }
+    }
+
+}
+
+// Gallery Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .gallery-container {
+    padding: 1em 2em 1em 2em;
+
+    .gallery-header {
+        text-align: center;
+        width: 100%;
+    }
+
+    .gallery-button-container {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .gallery-button {
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+    }
+
+    .gallery-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+
+        .gallery-item {
+            max-width: 30em;
+            margin: 0em 1em 2em 1em;
+
+        }
+    }
+
+}
