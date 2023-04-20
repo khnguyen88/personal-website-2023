@@ -14,6 +14,99 @@ body, html {
     flex: 1 0 auto;
 }
 
+
+
+// Footer Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .footer-container {
+    color: var(--bs-navbar-active-color);
+    padding: 1em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .footer-item-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .footer-section-header{
+            margin-bottom: .5em;
+        }
+
+        .footer-item-hideable{
+            margin-bottom: .25em;
+        }
+
+
+        .icons-container{
+            margin-top: .5em;
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .colorme{
+                color:white;
+            }
+
+            .colorme:hover {
+                color: grey;
+            }
+        }
+    }
+
+    .footer-section-header{
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    ::ng-deep .footer-container {
+        background-color: rgb(162, 51, 51);
+        color: var(--bs-navbar-active-color);
+        padding: 1em 2em 1em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .footer-item-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .icons-container {
+                    margin-top: 0em;
+                    width: 40vw;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+            
+                .colorme {
+                        color: white;
+                    }
+                
+                    .colorme:hover {
+                        color: grey;
+                    }
+            }
+
+            .footer-item-hideable{
+                display: none;
+            }
+        }
+
+    }
+}
+
+
+
+
+
 // Projects Component Style
 // SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
 ::ng-deep .projects-container{

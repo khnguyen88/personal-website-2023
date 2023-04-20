@@ -1,5 +1,5 @@
 <!-- Footer Container -->
-<div class="footer-container">
+<div class="navbar-dark bg-dark footer-container">
 
     <!-- Footer Item Container -->
 
@@ -7,17 +7,17 @@
     <!-- Left Footer Item -->
     <div class="footer-item-container left-footer-item">
         <!-- Basic Information -->
-        <p>{{footerPersonalInfo.name}}</p>
-        <p>{{footerPersonalInfo.profession1}}</p>
-        <p>{{footerPersonalInfo.profession2}}</p>
+        <p class="footer-section-header">{{footerPersonalInfo.name}}</p>
+        <p class="footer-item-hideable">{{footerPersonalInfo.profession1}}</p>
+        <p class="footer-item-hideable">{{footerPersonalInfo.profession2}}</p>
 
     </div>
 
     <!-- Center Footer Item -->
     <!-- Personal ontacts -->
     <div class="footer-item-container center-footer-item">
-        <p>{{footerContactInfo.header}}</p>
-        <p>{{footerContactInfo.phoneNumber}}</p>
+        <p class="footer-section-header footer-item-hideable">{{footerContactInfo.header}}</p>
+        <p class="footer-item-hideable">{{footerContactInfo.phoneNumber}}</p>
         <p>{{footerContactInfo.emailAddress}}</p>
     </div>
 
@@ -27,10 +27,10 @@
     <!-- Used to retrieve information to populate the Font Awesome Icon components' "icon" property and the anchor elements
          "href" and "alt" attributes -->
     <div class="footer-item-container right-footer-item">
-        <p>{{footerPersonalLinks.header}}</p>
-        <div *ngFor="let link of footerPersonalLinks.links">
-            <a [href]="link.url" alt="'Link to my personal '+ link.name + ' account.'" target="_blank">
-                <fa-icon [icon]="link.fontAwesomeIcon"></fa-icon>
+        <p class="footer-section-header footer-item-hideable">{{footerPersonalLinks.header}}</p>
+        <div class="icons-container">
+            <a *ngFor="let link of footerPersonalLinks.links" [href]="link.url" alt="'Link to my personal '+ link.name + ' account.'" target="_blank">
+                <fa-icon [icon]="link.fontAwesomeIcon" class="colorme" size="lg"></fa-icon>
             </a>
         </div>
     </div>
