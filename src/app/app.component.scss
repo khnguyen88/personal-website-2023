@@ -63,7 +63,7 @@ body, html {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:500px) {
     ::ng-deep .footer-container {
         background-color: rgb(162, 51, 51);
         color: var(--bs-navbar-active-color);
@@ -161,11 +161,16 @@ body, html {
         width: 100%;
     }
 
-    .gallery-button {
+    .gallery-button-container {
         margin-top: 1em;
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        .gallery-button {
+            margin-right: 1em;
+            margin-left: 1em;
+        }
     }
 
     .gallery-items-container {
