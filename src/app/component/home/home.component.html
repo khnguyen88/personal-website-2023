@@ -5,25 +5,25 @@
 <!-- Source: https://stackoverflow.com/questions/44900769/angular-wait-until-i-receive-data-before-loading-template -->
 <div class="home-container" *ngIf="dataLoaded | async">
     <!-- Page Header -->
-    <h1>About Me</h1>
+    <h1 class="home-header">About Me</h1>
     <br>
 
-    <!-- Interests Item Container -->
+    <!-- Home Item Container -->
     <!-- Divided into two sections -->
     <div class="home-items-container">
         <!-- Personal Profile Section -->
-        <div class="home-left-section" style="width:40%">
+        <div class="home-left-section">
             <img class="profile-image" [src]="baseImageAssetDirectory + homeData.profileImage"
                 [alt]="'Profile Picture - ' + homeData.name"/>
         </div>
 
         <!-- Personal About Me Section -->
-        <div class="home-right-section" style="width:40%">
+        <div class="home-right-section">
 
             <!-- About Me Primary Information -->
             <!-- Utilizes Angular's ngFor directive to loop through nest object arrays assigned to the homeData property -->
             <!-- Used to retrieve information to populate about me descriptions on the home page -->
-            <div class="card home-item primary" *ngFor="let primaryItem of homeData.primary">
+            <div class="home-item primary" *ngFor="let primaryItem of homeData.primary">
                 <div class="intro">
                     <p>{{homeData.intro}}</p>
                 </div>
@@ -40,7 +40,7 @@
             <!-- Utilized Angular's Bootstrap Carousel Component to create dynamically changing content-->
             <!-- Angular's Bootstrap Carousel Component nested within Boostrap Card Containers/Classes -->
             <!-- Sources: https://ng-bootstrap.github.io/#/components/carousel/examples -->
-            <div class="card home-item secondary">
+            <div class="home-item secondary">
                 <ngb-carousel *ngIf="homeData" [showNavigationArrows]="showNavigationArrows"
                     [showNavigationIndicators]="showNavigationIndicators" [interval]="carouselInterval">
                     <ng-template ngbSlide *ngFor="let secondaryItem of homeData.secondary">
