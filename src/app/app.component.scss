@@ -23,6 +23,17 @@ body, html {
     flex: 1 0 auto;
 }
 
+// Note: we refer to ::ng-deep to permeates and cascade throughout all components or file, event nested children. 
+// "::ng-deep" converts a component style to a global style
+
+// General Image Files
+// Not required, but set some initial height and width, so lazy loading works better.
+// Lazy loading does seems to work without this global element styles, but works slightly better with the styles. More testing needed.
+// Source: https://stackoverflow.com/questions/57753240/native-lazy-loading-loading-lazy-not-working-even-with-flags-enabled
+::ng-deep img{
+    width:"auto"; 
+    height:"100%";
+}
 
 // Footer Component Style
 // SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
