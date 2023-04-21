@@ -13,6 +13,10 @@
         <!-- Source: https://www.tektutorialshub.com/angular/angular-formbuilder-in-reactive-forms/ -->
         <!-- We associated and bound our form to our formGroup or formBuilder's group, contactForm -->
         <!-- We associated and bound our form to the onsubmit event and associated with the onSubmit method -->
+        <div class="row g-3 contact-note">
+                Please fill the form below and contact me if you have any questions, comments, or interests in my professional or
+                personal work, or just want to chat!
+        </div>
         <form class="row g-3 contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             
             <!-- Name Form Label / Input -->
