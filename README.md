@@ -112,7 +112,7 @@
 18. After configuring the Apache files, we must restart the apache service with this command:
     1. **`sudo service apache2 restart`**
 19. Once done, go to the URL of your application, and enjoy! For me, my website is hosted here:
-20. [http://34.148.114.117](http://34.148.114.117/)
+    1. [http://34.148.114.117](http://34.148.114.117/)
 
 ---
 
