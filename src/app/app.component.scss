@@ -8,6 +8,15 @@ body, html {
     flex-direction: column;
     min-height: 100vh;
     overflow:auto;
+
+    // Newly imported fonts from google
+    // Source: https: //fonts.google.com/
+    // Lato|Roboto|Oswald|Montserrat:400,500,600,700,800,900|Poppins|Futura|Noto+Sans|Raleway|Open+San|Schibsted+Grotesk|Ubuntu <- san-serif, favorites: Montserrat
+    // Rubik: 400, 500, 600, 700, 800, 900|Inter:400, 500, 600, 700, 800, 900" <- san-serif, favorites: Inter
+    // Alegreya|Playfair+Display|Merriweather|Montserrat+Alternate|Lora <- serif, favorites: Lora & Merriweather
+    // font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Default san-serif
+    // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; // Default serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .outlet-container {
@@ -15,10 +24,16 @@ body, html {
 }
 
 
+// Footer Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .navbar {
+font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 // Footer Component Style
 // SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
 ::ng-deep .footer-container {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--bs-navbar-active-color);
     padding: 1em 2em 1em 2em;
     display: flex;
@@ -111,14 +126,16 @@ body, html {
     height: calc(100vh - 56px - 128px - 10em);
 
     .home-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
+        font-weight: 800;
     }
 
     .home-items-container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        height: calc(100vh - 56px - 128px - 10em);
+        height: calc(100vh - 3.5em - 8em - 10em);
 
 
         .home-right-section {
@@ -129,6 +146,7 @@ body, html {
                 height: 50%;
 
                 .intro {
+                    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-weight: bold;
                     font-size: 1.25rem;
                 }
@@ -139,6 +157,7 @@ body, html {
                 height: 50%;
 
                 .secondary-header {
+                    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-style: italic;
                     font-weight: bold;
                     margin-bottom: 1em;
@@ -167,7 +186,7 @@ body, html {
 }
 
 @media screen and ((min-width:2048px) and (min-height:1024px)) {
-::ng-deep .home-container {
+    ::ng-deep .home-container {
 
         .home-items-container {
 
@@ -199,6 +218,7 @@ body, html {
 
         .home-header {
             text-align: center;
+            margin-bottom: 2em;
         }
 
         .home-items-container {
@@ -258,8 +278,8 @@ body, html {
 
         .home-header {
             text-align: center;
+            margin-bottom: 2em;
         }
-
         .home-items-container {
             display: flex;
             flex-direction: column;
@@ -319,8 +339,11 @@ body, html {
     padding: 1em 2em 1em 2em;
 
     .interests-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .interests-items-container {
@@ -336,7 +359,10 @@ body, html {
             margin: 0em 1em 2em 1em;
 
             .card-body .card-text .interest-header {
+                font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin-bottom: 1em;
+                text-align: center;
+                font-weight: 600;
             }
         }
     }
@@ -352,8 +378,11 @@ body, html {
     padding: 1em 2em 1em 2em;
 
     .projects-header{
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .projects-items-container{
@@ -369,7 +398,10 @@ body, html {
             margin: 0em 1em 2em 1em;
 
             .card-body .card-text .project-header {
+                font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin-bottom: 1em;
+                text-align: center;
+                font-weight: 600;
             }
 
 
@@ -396,8 +428,11 @@ body, html {
     padding: 1em 2em 1em 2em;
 
     .gallery-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
         width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
     }
 
     .gallery-button-container {
@@ -427,4 +462,176 @@ body, html {
         }
     }
 
+}
+
+
+// Resume Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .resume-container {
+    padding: 1em 2em 1em 2em;
+
+    .resume-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
+    }
+
+    .resume-items-container {
+        width: 100%;
+
+        .resume-item {
+            margin: 0em 1em 3em 1em;
+
+            .resume-item-header {
+                font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+            }
+
+            .resume-header-line {
+                border: 2px solid black;
+            }
+
+            .resume-item-container {
+                margin: 1em;
+
+                .resume-text-bold {
+                    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                }
+
+                .resume-text-italic {
+                    font-style:italic;
+                }
+
+                .resume-subitem-container{
+                    padding: 1em 0em 1em 0em;
+                    border-bottom: 1px dashed black;
+
+                    .resume-subitem-header{
+                        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .flex-item-container {
+                display: flex;
+
+                .flex-item {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:840px) {
+::ng-deep .resume-container {
+
+        .resume-items-container {
+            width: 100%;
+
+            .resume-item {
+                margin: 0em 0em 3em 0em;
+
+                .resume-item-container {
+                    margin: 0em;
+
+                    .resume-text-bold {
+                        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: bold;
+                    }
+
+                    .resume-text-italic {
+                        font-style: italic;
+                    }
+
+                    .resume-subitem-container {
+                        padding: 1em 0em 1em 0em;
+                        border-bottom: 1px dashed black;
+
+                        .resume-subitem-header {
+                            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .flex-item-container {
+                    display: block;
+
+                    .flex-item {
+                        flex: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contact Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .contact-container {
+    padding: 1em 2em 1em 2em;
+
+    .contact-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
+    }
+
+    .contact-form-container .contact-note {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form-container .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .form-label{
+            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .form-input {
+            width: 100%;
+        }
+
+        .form-textarea {
+            width: 100%;
+            height: 10em;
+        }
+    }
+
+}
+
+
+// Submit Message Component Style
+// SCSS allows for nested selectors allowing for cleaner and more structure CSS styling
+::ng-deep .submit-message-container {
+    height: calc(100vh - 3.5em - 8em);
+    padding: 1em 2em 1em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .submit-message-header {
+        font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        width: 100%;
+        font-weight: 800;
+        margin-bottom: 2em;
+    }
 }

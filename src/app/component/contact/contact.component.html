@@ -1,1 +1,73 @@
-<p>contact works!</p>
+<!-- Page Container -->
+<div class="contact-container">
+    <!-- Page Header -->
+    <h1 class="contact-header">Contact</h1>
+    <br>
+
+    <!-- Contact Form Container -->
+    <div class="contact-form-container">
+
+        <!-- Contact Form -->
+        <!-- // User Angular's Reactive Form model-driven approach to handling form input and provide form controls -->
+        <!-- Source: https://angular.io/guide/reactive-forms -->
+        <!-- Source: https://www.tektutorialshub.com/angular/angular-formbuilder-in-reactive-forms/ -->
+        <!-- We associated and bound our form to our formGroup or formBuilder's group, contactForm -->
+        <!-- We associated and bound our form to the onsubmit event and associated with the onSubmit method -->
+        <div class="row g-3 contact-note">
+                Please fill the form below and contact me if you have any questions, comments, or interests in my professional or
+                personal work, or just want to chat!
+        </div>
+        <form class="row g-3 contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            
+            <!-- Name Form Label / Input -->
+            <div class="col-md-6">
+                <label class="form-label" for="name">Full Name: </label><br/>
+                <input class="form-input" id="name" type="text" formControlName="name"> <!-- We assigned the input to the fromControlName with the key of "name"-->
+                
+                <!-- Name Error Message -->
+                <!-- We display an message if the name form input has be touched or edited. We hide it if form control determins the name input is valid. -->
+                <div *ngIf="(name?.dirty || name?.touched)" [hidden]="name?.valid">Name needs to be at least 10 characters</div>
+            
+            </div>
+
+
+
+            <!-- Column break to new line -->
+            <div class="w-100"></div>
+
+
+            <!-- Email Form Label / Input -->
+            <div class="col-md-6">
+                <label class="form-label" for="email">Email: </label><br />
+                <input class="form-input" id="email" type="email" formControlName="email">
+
+                <!-- Name Error Message -->
+                <!-- We display an message if the email form input has be touched or edited. We hide it if form control determins the email input is valid. -->
+                <div *ngIf="(email?.dirty || email?.touched)" [hidden]="email?.valid">Please entered a valid email!</div>
+            </div>
+
+
+            <!-- Column break to new line -->
+            <div class="w-100"></div>
+
+
+            <!-- Message Form Label / Input -->
+            <div class="col-md-6">
+                <label class="form-label" for="message">Message: </label><br />
+                <textarea class="form-textarea" name="message" id="" formControlName="message"></textarea>
+
+                <!-- Message Error Message -->
+                <!-- We display an message if the message form input has be touched or edited. We hide it if form control determins the message input is valid. -->
+                <div *ngIf="(message?.dirty || message?.touched)" [hidden]="message?.valid">Message needs to be at least 10 characters</div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- We disable our submit button until our formBuilder's group or FormGroup is valid or when all form controls for each input is valid -->
+                <!-- Note: (NgSubmit) submit won't work above if we have the button binded to a routerLink. I did so just to provide a mock submit message since we aren't sending the data anywhere. -->
+                <!-- Note: To work around this issue, I bounded the click event to the onSubmit() button. Effectively, achieving what we set to do above. If we remove the routerLink attribute fromt he button, we can also remove the click event attribute too. -->
+                <button class="btn btn-dark" type="submit" [disabled]="!contactForm.valid" (click)="onSubmit()" [routerLink]="submitMessageRoutePath">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</div>
