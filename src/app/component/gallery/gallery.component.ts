@@ -32,7 +32,11 @@ export class GalleryComponent extends BaseComponent implements OnInit {
 
   // Stores the base directory of asset images folder
   // To be used to populate data in the Gallery Template and image elements attributes
-  baseImageAssetDirectory: string = "../../../assets/images/";
+
+  // Note: Make sure you reference your assets in terms relative paths, not absolute, else the Angular application 
+  // won't work when served on subdirectory of the web server's root directory, just the root itself. 
+  // Source: https://github.com/angular/angular-cli/issues/16076
+  baseImageAssetDirectory: string = "./assets/images/";
 
   // Imported and injected the Gallery Service through the class constructor's parameter
   // Imported and injected the ChangeDetectorRef class in order to use it's detectChanges() to flag situations where data used for page content might change to rerender page content

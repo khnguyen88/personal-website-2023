@@ -16,7 +16,11 @@ export class ProjectsComponent extends BaseComponent implements OnInit {
 
   // Stores the base directory of asset images folder
   // To be used to populate data in the Projects Template and image elements attributes
-  baseImageAssetDirectory: string = "../../../assets/images/";
+  
+  // Note: Make sure you reference your assets in terms relative paths, not absolute, else the Angular application 
+  // won't work when served on subdirectory of the web server's root directory, just the root itself. 
+  // Source: https://github.com/angular/angular-cli/issues/16076
+  baseImageAssetDirectory: string = "./assets/images/";
 
 
   // Ran into a minor issue where template/page renders before JSON data is loaded. Solution is to use pipe async.
