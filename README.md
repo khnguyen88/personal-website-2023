@@ -48,6 +48,7 @@
       1. **`ng build --base-href /subdirectory/of/root`**
       2. **`ng build --configuration="production" --base-href "/subdirectory/of/root"`**
       3. **WARNING: ONLY HOST THE APPLICATION FROM THE WEB SERVER'S ROOT FOR NOW. CURRENTLY, THE APPLICATION DOES NOT WORK IN THE SUBDIRECTORY.**
+
          **THE APPLICATION RECOGNIZES THE PAGE URL FROM THE SUBDIRECTORY BUT THINKS THE ASSET FOLDER IS IN THE ROOT WEB SERVER. I NEED TO FIGURE IT OUT IN THE FUTURE AND UPDATE THIS GUIDE LATER.**
 
 7. Note: During our **ng build** run, if we run into a budget issue w/ our project to initial or stylesheet files, we can adjust the limits in the "angular.json" file.
