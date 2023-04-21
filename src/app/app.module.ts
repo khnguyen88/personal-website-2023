@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { HomeComponent } from './component/home/home.component';
 
 import { NgbCollapseModule, NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SubmitMessageComponent } from './component/submit-message/submit-message.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProjectsComponent,
     GalleryComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    SubmitMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     NgbCollapseModule,
     NgbCarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
 
     
   ],
