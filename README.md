@@ -42,14 +42,18 @@
    1. **`ng build --base-href /`**
       1. Since I am hosting on /var/www/html/ webserver root, I saved my file here we assume our base href is "/"
    2. Alternatively, we can use this command too:
-      1. **`ng build --configuration="production" --base-href "/"`**
+      1. **`ng build --base-href "/"`**
+      2. **`ng build --configuration="production” --base-href "/"`**
    3. Note: If we are saving the file in a subdirectory of the web server, we can use the following command.
 
-      1. **`ng build --base-href /subdirectory/of/root`**
-      2. **`ng build --configuration="production" --base-href "/subdirectory/of/root"`**
-      3. **WARNING: ONLY HOST THE APPLICATION FROM THE WEB SERVER'S ROOT FOR NOW. CURRENTLY, THE APPLICATION DOES NOT WORK IN THE SUBDIRECTORY.**
+      1. **`ng build --base-href "/subdirectory/of/root/"`**
+      2. **`ng build --base-href /subdirectory/of/root/`**
+      3. **`ng build --configuration="production" --base-href "/subdirectory/of/root/"`**
+      4. **WARNING: THIS DEMO IS SET TO HOST THE APPLICATION FROM THE WEB SERVER’S ROOT DIRECTORY.**
 
-         **THE APPLICATION RECOGNIZES THE PAGE URL FROM THE SUBDIRECTORY BUT THINKS THE ASSET FOLDER IS IN THE ROOT WEB SERVER. I NEED TO FIGURE IT OUT IN THE FUTURE AND UPDATE THIS GUIDE LATER.**
+         **IF YOU WANT TO HOST AND SERVE THE APPLICATION IN A SUBDIRECTORY OF THE WEB SERVER’S ROOT, MAKE SURE ALL REFERENCED ASSETS ARE TO RELATIVE PATHS AND NOT ABSOLUTE, ELSE THE APPLICATION WON’T WORK.**
+
+         1. SOURCE: [https://github.com/angular/angular-cli/issues/16076](https://github.com/angular/angular-cli/issues/16076)
 
 7. Note: During our **ng build** run, if we run into a budget issue w/ our project to initial or stylesheet files, we can adjust the limits in the "angular.json" file.
 
