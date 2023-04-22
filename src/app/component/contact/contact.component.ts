@@ -58,7 +58,7 @@ export class ContactComponent {
   
   onSubmit() {
     // For checking purposes only
-    alert(JSON.stringify(this.contactForm.value));
+    // alert(JSON.stringify(this.contactForm.value));
 
     // This is just a placeholder for now
     // We would want to take this data and send it over server-side for processing and handling
